@@ -9,7 +9,7 @@ summary: >-
   experiment and avoiding common pitfalls.
 hosts:
   - name: "Rachael Jack"
-  - name: "Tobias"
+  - name: "Tobias Theijll-Madsen"
 speakers:
   - name: "Jonas Nölle"
 ---
