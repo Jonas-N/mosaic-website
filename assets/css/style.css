@@ -465,6 +465,14 @@ video.team-photo {
   margin: 0 0 4px;
   font-size: 1.15rem;
 }
+.team-name a {
+  color: var(--text);
+  text-decoration: none;
+}
+.team-name a:hover {
+  color: var(--brand);
+  text-decoration: underline;
+}
 .team-role {
   margin: 0;
   color: var(--muted);

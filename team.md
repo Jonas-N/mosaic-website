@@ -17,7 +17,7 @@ sessions, and welcoming new members into the community.
       <img class="team-photo" src="{{ '/assets/img/team/rachael.jpg' | relative_url }}" alt="Rachael E. Jack" width="120" height="120">
     </div>
     <div class="team-info">
-      <h3 class="team-name">Rachael E. Jack</h3>
+      <h3 class="team-name"><a href="https://www.gla.ac.uk/schools/psychologyneuroscience/staff/rachaeljack/" rel="noopener" target="_blank">Rachael E. Jack</a></h3>
       <p class="team-role">Professor, Area Lead of Computational Social Sciences at Vanderbilt University, USA</p>
     </div>
   </li>
@@ -26,7 +26,7 @@ sessions, and welcoming new members into the community.
       <video class="team-photo" src="{{ '/assets/img/team/jonas.webm' | relative_url }}" autoplay loop muted playsinline aria-label="Jonas Nölle"></video>
     </div>
     <div class="team-info">
-      <h3 class="team-name">Jonas Nölle</h3>
+      <h3 class="team-name"><a href="https://linktr.ee/jonasnoelle" rel="noopener" target="_blank">Jonas Nölle</a></h3>
       <p class="team-role">Unemployed bum and vibe coder, WFH, Blue Planet</p>
     </div>
   </li>
@@ -35,7 +35,7 @@ sessions, and welcoming new members into the community.
       <img class="team-photo" src="{{ '/assets/img/team/helio.jpeg' | relative_url }}" alt="Helio Cuve" width="120" height="120">
     </div>
     <div class="team-info">
-      <h3 class="team-name">Helio Cuve</h3>
+      <h3 class="team-name"><a href="https://www.bristol.ac.uk/people/person/Helio%20Clemente%20Jose-Cuve-30118984-1af9-470e-a401-397bacd31522/" rel="noopener" target="_blank">Helio Cuve</a></h3>
       <p class="team-role">Senior Lecturer, Experimental Psychology, University of Bristol, UK</p>
     </div>
   </li>
@@ -44,7 +44,7 @@ sessions, and welcoming new members into the community.
       <img class="team-photo" src="{{ '/assets/img/team/pablo.jpg' | relative_url }}" alt="Pablo Arias-Sarah" width="120" height="120">
     </div>
     <div class="team-info">
-      <h3 class="team-name">Pablo Arias-Sarah</h3>
+      <h3 class="team-name"><a href="https://pablo-arias.github.io/" rel="noopener" target="_blank">Pablo Arias-Sarah</a></h3>
       <p class="team-role">Research Scientist, Psychology and Neurocognition Laboratory (LPNC), Université Grenoble Alpes, France</p>
     </div>
   </li>
@@ -53,7 +53,7 @@ sessions, and welcoming new members into the community.
       <img class="team-photo" src="{{ '/assets/img/team/chen.jpg' | relative_url }}" alt="Chen Zhou" width="120" height="120">
     </div>
     <div class="team-info">
-      <h3 class="team-name">Chen Zhou</h3>
+      <h3 class="team-name"><a href="https://www.gla.ac.uk/schools/psychologyneuroscience/staff/chenzhou/" rel="noopener" target="_blank">Chen Zhou</a></h3>
       <p class="team-role">Lecturer, School of Psychology &amp; Neuroscience, University of Glasgow, UK</p>
     </div>
   </li>

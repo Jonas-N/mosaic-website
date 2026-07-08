@@ -9,9 +9,10 @@ permalink: /about/
 **MOSAIC** — the Multimodal Social Interactions Group — is an international
 community of 200+ scholars who meet monthly to discuss pressing topics in social
 interaction research. It was founded in 2022 by Rachael Jack and Jonas Nölle at
-the School of Psychology and Neuroscience at the University of Glasgow and has
-since grown rapidly into an open cross-institutional and transdisciplinary
-platform for researchers at all career stages.
+the [School of Psychology and Neuroscience](https://www.gla.ac.uk/schools/psychologyneuroscience/)
+at the University of Glasgow and has since grown rapidly into an open
+cross-institutional and transdisciplinary platform for researchers at all career
+stages.
 
 Each month we run a **Grand Challenge**: a 90-minute online session built around
 invited talks, demos, and open discussion. Topics span the many modalities of
