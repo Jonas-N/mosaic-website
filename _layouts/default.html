@@ -14,9 +14,14 @@
     <div class="mosaic-bar" aria-hidden="true"></div>
     <div class="wrap">
       <a class="brand" href="{{ '/' | relative_url }}">
+        {%- comment -%}
+          Use PNG exports (text already outlined/rasterised with Avenir).
+          The source SVG still has live text + a hidden dark layer — browsers
+          without Avenir fall back, so PNG is the reliable web asset.
+        {%- endcomment -%}
         <img
           class="brand-logo brand-logo-light"
-          src="{{ '/assets/img/MOSAIC_logo_banner.svg' | relative_url }}"
+          src="{{ '/assets/img/MOSAIC_logo_banner.png' | relative_url }}"
           width="280"
           height="56"
           alt="MOSAIC — Multimodal Social Interactions">
@@ -46,7 +51,7 @@
       <div class="footer-brand">
         <img
           class="footer-logo brand-logo-light"
-          src="{{ '/assets/img/MOSAIC_logo_banner.svg' | relative_url }}"
+          src="{{ '/assets/img/MOSAIC_logo_banner.png' | relative_url }}"
           width="160"
           height="32"
           alt="">
