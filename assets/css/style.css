@@ -208,6 +208,95 @@ main.wrap { padding-block: 32px 56px; }
 .hero .tagline { color: var(--muted); font-size: 1.1rem; margin-top: 0; }
 .cta-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; }
 
+/* --- Topics word cloud (home) ------------------------------------------- */
+.topics {
+  margin: 40px 0 8px;
+  padding: 24px 22px 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.topics h2 {
+  margin: 0 0 6px;
+  font-size: 1.35rem;
+}
+.topics-intro {
+  margin: 0 0 12px;
+  color: var(--muted);
+}
+.topics-cloud {
+  position: relative;
+  width: 100%;
+  min-height: 220px;
+  margin: 8px 0 16px;
+  overflow: hidden;
+  border-radius: 8px;
+  background:
+    radial-gradient(ellipse at 30% 40%, color-mix(in srgb, var(--brand) 8%, transparent), transparent 55%),
+    radial-gradient(ellipse at 70% 60%, color-mix(in srgb, var(--accent) 8%, transparent), transparent 50%),
+    var(--bg);
+  border: 1px solid var(--border);
+}
+.topics-word {
+  position: absolute;
+  white-space: nowrap;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  user-select: none;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+  cursor: default;
+}
+.topics-word:hover {
+  transform: scale(1.08);
+  opacity: 1 !important;
+  z-index: 2;
+}
+.topics-empty {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.topics-years {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 4px 0 8px;
+}
+.topics-year-btn {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+.topics-year-btn:hover {
+  background: var(--surface-2);
+  border-color: color-mix(in srgb, var(--brand) 40%, var(--border));
+}
+.topics-year-btn.is-active {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
+}
+.topics-hint {
+  margin: 0;
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
 /* --- Next-event banner -------------------------------------------------- */
 .next-event {
   border: 1px solid var(--border);

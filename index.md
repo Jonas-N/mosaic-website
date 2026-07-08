@@ -17,20 +17,20 @@ title: Home
   </div>
 </section>
 
-{%- comment -%}
+{% comment %}
   Find the next upcoming event: sort ascending by date, keep the first one whose
   date is still in the future relative to the build time.
-{%- endcomment -%}
-{%- assign now = site.time | date: "%s" | plus: 0 -%}
-{%- assign upcoming = "" | split: "" -%}
-{%- assign by_date = site.events | sort: "date" -%}
-{%- for e in by_date -%}
-  {%- assign ed = e.date | date: "%s" | plus: 0 -%}
-  {%- if ed >= now -%}{%- assign upcoming = upcoming | push: e -%}{%- endif -%}
-{%- endfor -%}
+{% endcomment %}
+{% assign now = site.time | date: "%s" | plus: 0 %}
+{% assign upcoming = "" | split: "" %}
+{% assign by_date = site.events | sort: "date" %}
+{% for e in by_date %}
+  {% assign ed = e.date | date: "%s" | plus: 0 %}
+  {% if ed >= now %}{% assign upcoming = upcoming | push: e %}{% endif %}
+{% endfor %}
 
 {% if upcoming.size > 0 %}
-{%- assign next = upcoming | first -%}
+{% assign next = upcoming | first %}
 <div class="next-event">
   <p class="eyebrow">Next Grand Challenge</p>
   <h2><a href="{{ next.url | relative_url }}">{{ next.title }}</a></h2>
@@ -47,6 +47,8 @@ title: Home
   <p><a class="btn btn-primary" href="{{ '/calendar/' | relative_url }}">Subscribe to the calendar</a></p>
 </div>
 {% endif %}
+
+{% include topics-cloud.html %}
 
 ## How it works
 
