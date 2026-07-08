@@ -240,7 +240,7 @@
     // Suppress unigrams that are fully covered by a stronger multi-word phrase
     list.sort(function (a, b) { return b.weight - a.weight; });
 
-    var max = yearFilter ? 28 : 40;
+    var max = yearFilter ? 22 : 36;
     var minW = yearFilter ? 1.5 : 3;
     list = list.filter(function (w) { return w.weight >= minW; }).slice(0, max);
 
@@ -248,7 +248,7 @@
     if (list.length < 8) {
       list = Object.keys(map).map(function (k) { return map[k]; })
         .sort(function (a, b) { return b.weight - a.weight; })
-        .slice(0, 20);
+        .slice(0, 18);
     }
 
     return list;
@@ -259,78 +259,153 @@
     "#1f5fa8", "#0bd78f", "#1ad9c9", "#d9822b",
   ];
 
-  function layoutCloud(words, width, height) {
+  function overlaps(x, y, w, h, placed, pad) {
+    for (var p = 0; p < placed.length; p++) {
+      var o = placed[p];
+      if (!(x + w + pad < o.x || o.x + o.w + pad < x ||
+            y + h + pad < o.y || o.y + o.h + pad < y)) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  function inBounds(x, y, w, h, width, height, margin) {
+    return x >= margin && y >= margin &&
+      x + w <= width - margin && y + h <= height - margin;
+  }
+
+  function layoutCloud(words, width, baseHeight) {
     cloudEl.innerHTML = "";
-    cloudEl.style.height = height + "px";
 
     if (!words.length) {
+      cloudEl.style.height = baseHeight + "px";
       cloudEl.innerHTML = '<p class="topics-empty">No topics for this year yet.</p>';
       return;
     }
+
+    // Grow canvas with word count so sparse year clouds still breathe,
+    // and dense "all years" clouds have room (avoids corner pile-ups).
+    var height = Math.max(
+      baseHeight,
+      Math.min(520, 180 + words.length * 12)
+    );
+    cloudEl.style.height = height + "px";
 
     var maxW = words[0].weight;
     var minW = words[words.length - 1].weight;
     var range = Math.max(maxW - minW, 0.01);
 
+    // Slightly smaller type when the cloud is crowded
+    var sizeScale = words.length > 28 ? 0.78 : words.length > 18 ? 0.88 : 1;
+
     var placed = [];
     var cx = width / 2;
     var cy = height / 2;
+    // Elliptical spiral matches the wide container aspect ratio
+    var aspect = width / Math.max(height, 1);
+    var pad = 6;
+    var margin = 6;
 
     words.forEach(function (word, idx) {
       var span = document.createElement("span");
       span.className = "topics-word";
       span.textContent = word.text;
       var t = (word.weight - minW) / range;
-      var size = 0.85 + t * 1.55; // rem
+      var size = (0.8 + t * 1.35) * sizeScale; // rem
       span.style.fontSize = size + "rem";
       span.style.color = MOSAIC_COLORS[idx % MOSAIC_COLORS.length];
       span.style.fontWeight = t > 0.55 ? "700" : t > 0.25 ? "600" : "500";
       span.style.opacity = String(0.72 + t * 0.28);
+      // Hide until placed so failed items can be dropped cleanly
+      span.style.visibility = "hidden";
       cloudEl.appendChild(span);
 
-      // Measure
       var w = span.offsetWidth;
       var h = span.offsetHeight;
-      var pad = 4;
+      // If a single word is wider than the canvas, shrink until it fits
+      var shrinkGuard = 0;
+      while (w > width - margin * 2 && shrinkGuard < 6) {
+        size *= 0.85;
+        span.style.fontSize = size + "rem";
+        w = span.offsetWidth;
+        h = span.offsetHeight;
+        shrinkGuard++;
+      }
 
-      var angle = 0;
-      var radius = 0;
       var x = cx - w / 2;
       var y = cy - h / 2;
       var found = false;
-      var step = 0.35;
-      var maxTries = 600;
 
-      for (var tries = 0; tries < maxTries; tries++) {
-        x = cx + Math.cos(angle) * radius - w / 2;
-        y = cy + Math.sin(angle) * radius - h / 2;
-        // keep inside bounds
-        x = Math.max(2, Math.min(width - w - 2, x));
-        y = Math.max(2, Math.min(height - h - 2, y));
+      // 1) Archimedean spiral — reject out-of-bounds (never clamp to corners)
+      var theta = Math.random() * Math.PI * 2; // slight variety per render
+      var maxR = Math.sqrt(width * width + height * height) / 2;
+      var steps = 0;
+      var maxSteps = 2500;
+      while (steps < maxSteps) {
+        var r = 2 + 0.55 * theta;
+        if (r > maxR + 40) break;
+        x = cx + Math.cos(theta) * r * aspect * 0.72 - w / 2;
+        y = cy + Math.sin(theta) * r * 0.72 - h / 2;
+        theta += 0.18;
+        steps++;
 
-        var ok = true;
-        for (var p = 0; p < placed.length; p++) {
-          var o = placed[p];
-          if (!(x + w + pad < o.x || o.x + o.w + pad < x ||
-                y + h + pad < o.y || o.y + o.h + pad < y)) {
-            ok = false;
+        if (!inBounds(x, y, w, h, width, height, margin)) continue;
+        if (overlaps(x, y, w, h, placed, pad)) continue;
+        found = true;
+        break;
+      }
+
+      // 2) Random free spots inside the box
+      if (!found) {
+        for (var attempt = 0; attempt < 300; attempt++) {
+          x = margin + Math.random() * Math.max(1, width - w - margin * 2);
+          y = margin + Math.random() * Math.max(1, height - h - margin * 2);
+          if (!overlaps(x, y, w, h, placed, pad)) {
+            found = true;
             break;
           }
         }
-        if (ok) { found = true; break; }
-        angle += step;
-        radius += 0.45;
       }
 
-      span.style.left = x + "px";
-      span.style.top = y + "px";
+      // 3) Shrink word and retry spiral once more
+      if (!found) {
+        size *= 0.75;
+        span.style.fontSize = size + "rem";
+        w = span.offsetWidth;
+        h = span.offsetHeight;
+        theta = 0;
+        steps = 0;
+        while (steps < maxSteps) {
+          var r2 = 2 + 0.5 * theta;
+          if (r2 > maxR + 40) break;
+          x = cx + Math.cos(theta) * r2 * aspect * 0.72 - w / 2;
+          y = cy + Math.sin(theta) * r2 * 0.72 - h / 2;
+          theta += 0.16;
+          steps++;
+          if (!inBounds(x, y, w, h, width, height, margin)) continue;
+          if (overlaps(x, y, w, h, placed, pad)) continue;
+          found = true;
+          break;
+        }
+      }
+
+      if (!found) {
+        // Drop rather than stack in a corner
+        span.remove();
+        return;
+      }
+
+      span.style.left = Math.round(x) + "px";
+      span.style.top = Math.round(y) + "px";
+      span.style.visibility = "visible";
       placed.push({ x: x, y: y, w: w, h: h });
     });
   }
 
   function cloudSize() {
     var w = cloudEl.clientWidth || 600;
-    var h = Math.max(220, Math.min(340, Math.round(w * 0.42)));
+    var h = Math.max(260, Math.min(380, Math.round(w * 0.48)));
     return { w: w, h: h };
   }
 
