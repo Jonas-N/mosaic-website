@@ -363,21 +363,13 @@ main.wrap { padding-block: 32px 56px; }
   display: block;
   background: var(--surface-2);
 }
+.team-photo-sm {
+  width: 56px;
+  height: 56px;
+}
 video.team-photo {
   object-fit: cover;
   pointer-events: none;
-}
-.team-photo-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 56px;
-  height: 56px;
-  font-weight: 700;
-  font-size: 0.85rem;
-  letter-spacing: 0.04em;
-  color: var(--brand);
-  background: var(--surface-2);
 }
 .team-info { min-width: 0; }
 .team-name {

@@ -64,7 +64,7 @@ sessions, and welcoming new members into the community.
 <ul class="team-list team-list-alumni">
   <li class="team-card team-card-compact">
     <div class="team-photo-ring team-photo-ring-sm">
-      <div class="team-photo team-photo-placeholder" aria-hidden="true">TT</div>
+      <img class="team-photo team-photo-sm" src="{{ '/assets/img/team/tobias.jpg' | relative_url }}" alt="Tobias Theijll-Madsen" width="56" height="56">
     </div>
     <div class="team-info">
       <h3 class="team-name">Tobias Theijll-Madsen</h3>
@@ -72,7 +72,7 @@ sessions, and welcoming new members into the community.
   </li>
   <li class="team-card team-card-compact">
     <div class="team-photo-ring team-photo-ring-sm">
-      <div class="team-photo team-photo-placeholder" aria-hidden="true">LR</div>
+      <img class="team-photo team-photo-sm" src="{{ '/assets/img/team/limor.jpg' | relative_url }}" alt="Limor Raviv" width="56" height="56">
     </div>
     <div class="team-info">
       <h3 class="team-name">Limor Raviv</h3>
