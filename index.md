@@ -5,7 +5,7 @@ title: Home
 
 <section class="hero">
   <h1>MOSAIC</h1>
-  <p class="tagline">The Multimodal Social Interaction Group — a monthly seminar series open to everyone.</p>
+  <p class="tagline">The Multimodal Social Interactions Group — a monthly seminar series open to everyone.</p>
   <p class="lede">
     Every month we host a <strong>Grand Challenge</strong>: an online session where
     an international community of 200+ scholars digs into a pressing topic in

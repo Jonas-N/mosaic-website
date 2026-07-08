@@ -62,10 +62,9 @@ h1 { font-size: 2rem; margin: 0.2em 0 0.4em; }
 h2 { font-size: 1.35rem; margin: 1.6em 0 0.5em; }
 h3 { font-size: 1.1rem; }
 
-/* --- Mosaic accent bar (brand colours from Grand Challenges banner) --- */
-.mosaic-bar {
-  height: 5px;
-  background: linear-gradient(
+/* --- Mosaic brand gradient (Grand Challenges banner colours) ---------- */
+:root {
+  --mosaic-gradient: linear-gradient(
     90deg,
     #ff8c1f 0%,
     #ff3c42 18%,
@@ -75,6 +74,11 @@ h3 { font-size: 1.1rem; }
     #0bd78f 80%,
     #1ad9c9 100%
   );
+}
+
+.mosaic-bar {
+  height: 5px;
+  background: var(--mosaic-gradient);
 }
 
 /* --- Header ------------------------------------------------------------- */
@@ -125,21 +129,58 @@ h3 { font-size: 1.1rem; }
 main.wrap { padding-block: 32px 56px; }
 
 .site-footer {
-  border-top: 1px solid var(--border);
-  background: var(--surface);
-  color: var(--muted);
+  border-top: none;
+  background: var(--mosaic-gradient);
+  color: rgba(255, 255, 255, 0.92);
   font-size: 0.9rem;
-  padding-block: 24px;
+  padding-block: 28px;
 }
 .site-footer p { margin: 6px 0; }
+.site-footer strong { color: #fff; }
 .footer-brand { margin-bottom: 10px; }
 .footer-logo {
   height: 28px;
   width: auto;
-  opacity: 0.85;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.25));
 }
-.footer-links a { color: var(--muted); }
-.footer-links span { margin-inline: 6px; color: var(--border); }
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 20px;
+  margin-top: 10px;
+}
+.footer-links a {
+  color: rgba(255, 255, 255, 0.92);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.footer-links a:hover { color: #fff; }
+.footer-links span { margin-inline: 6px; color: rgba(255, 255, 255, 0.55); }
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.18);
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+.social-icon:hover {
+  background: rgba(0, 0, 0, 0.32);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+.social-icon svg { display: block; }
 
 /* --- Buttons ------------------------------------------------------------ */
 .btn {
@@ -218,6 +259,7 @@ main.wrap { padding-block: 32px 56px; }
   border-bottom: 1px solid var(--border);
   padding-bottom: 6px;
   margin-top: 40px;
+  font-weight: 700;
 }
 
 /* --- Event detail ------------------------------------------------------- */
@@ -379,9 +421,4 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 32px 0; }
   }
 }
 
-/* Footer logo dark-mode swap (same classes as header) */
-.footer-logo.brand-logo-dark { display: none; }
-@media (prefers-color-scheme: dark) {
-  .footer-logo.brand-logo-light { display: none; }
-  .footer-logo.brand-logo-dark { display: block; }
-}
+

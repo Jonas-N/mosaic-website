@@ -6,7 +6,7 @@ permalink: /about/
 
 # About MOSAIC
 
-**MOSAIC** — the Multimodal Social Interaction Group — is an international
+**MOSAIC** — the Multimodal Social Interactions Group — is an international
 community of 200+ scholars who meet monthly to discuss pressing topics in social
 interaction research. It is hosted at the {{ site.institution }}.
 
