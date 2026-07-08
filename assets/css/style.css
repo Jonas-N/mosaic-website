@@ -1,0 +1,263 @@
+/* ---------------------------------------------------------------------------
+   MOSAIC website styles
+   A small, dependency-free stylesheet. Light/dark aware, mobile-first.
+   --------------------------------------------------------------------------- */
+
+:root {
+  --bg: #ffffff;
+  --surface: #f6f7f9;
+  --surface-2: #eef1f5;
+  --text: #1c2230;
+  --muted: #5b6472;
+  --border: #dce1e8;
+  --brand: #1f5fa8;        /* MOSAIC blue */
+  --brand-dark: #16457c;
+  --accent: #d9822b;       /* warm accent */
+  --upcoming: #1c7a4d;
+  --radius: 10px;
+  --maxw: 900px;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12161d;
+    --surface: #1a2029;
+    --surface-2: #222b36;
+    --text: #e7ebf1;
+    --muted: #9aa4b2;
+    --border: #2c3644;
+    --brand: #5aa0e6;
+    --brand-dark: #3f83c9;
+    --accent: #e8a45c;
+    --upcoming: #4cbf87;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.wrap {
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+a { color: var(--brand); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+h1, h2, h3 { line-height: 1.25; color: var(--text); }
+h1 { font-size: 2rem; margin: 0.2em 0 0.4em; }
+h2 { font-size: 1.35rem; margin: 1.6em 0 0.5em; }
+h3 { font-size: 1.1rem; }
+
+/* --- Header ------------------------------------------------------------- */
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.site-header .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+  padding-block: 12px;
+}
+.brand { display: flex; flex-direction: column; line-height: 1.1; }
+.brand:hover { text-decoration: none; }
+.brand-mark {
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  font-size: 1.35rem;
+  color: var(--brand);
+}
+.brand-sub { font-size: 0.8rem; color: var(--muted); }
+.site-nav { display: flex; flex-wrap: wrap; gap: 4px; }
+.site-nav a {
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: var(--text);
+  font-weight: 500;
+}
+.site-nav a:hover { background: var(--surface-2); text-decoration: none; }
+
+/* --- Main / footer ------------------------------------------------------ */
+main.wrap { padding-block: 32px 56px; }
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.9rem;
+  padding-block: 24px;
+}
+.site-footer p { margin: 6px 0; }
+.footer-links a { color: var(--muted); }
+.footer-links span { margin-inline: 6px; color: var(--border); }
+
+/* --- Buttons ------------------------------------------------------------ */
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.btn:hover { background: var(--surface-2); text-decoration: none; }
+.btn-primary {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
+}
+.btn-primary:hover { background: var(--brand-dark); border-color: var(--brand-dark); }
+
+/* --- Hero (home) -------------------------------------------------------- */
+.hero { margin-bottom: 8px; }
+.hero .tagline { color: var(--muted); font-size: 1.1rem; margin-top: 0; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; }
+
+/* --- Next-event banner -------------------------------------------------- */
+.next-event {
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--brand);
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  margin: 24px 0;
+}
+.next-event .eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--brand);
+  margin: 0 0 6px;
+}
+.next-event h2 { margin: 0 0 8px; font-size: 1.4rem; }
+.next-event .when { color: var(--muted); font-weight: 600; margin: 0 0 10px; }
+
+/* --- Event lists -------------------------------------------------------- */
+.event-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 16px; }
+.event-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 18px 20px;
+}
+.event-card-date {
+  margin: 0 0 4px;
+  font-weight: 700;
+  color: var(--brand);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+}
+.event-card-time { font-weight: 500; color: var(--muted); font-size: 0.9rem; }
+.event-card-title { margin: 2px 0 6px; }
+.event-card-summary { margin: 6px 0; color: var(--text); }
+.event-card-speakers { margin: 6px 0 0; color: var(--muted); font-size: 0.92rem; }
+.event-card-more { margin: 10px 0 0; font-weight: 600; }
+
+.section-label {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 6px;
+  margin-top: 40px;
+}
+
+/* --- Event detail ------------------------------------------------------- */
+.event-back { margin: 0 0 8px; }
+.event-status {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 3px 10px;
+  border-radius: 999px;
+  margin: 0 0 6px;
+}
+.event-status.upcoming { background: color-mix(in srgb, var(--upcoming) 18%, transparent); color: var(--upcoming); }
+.event-status.past { background: var(--surface-2); color: var(--muted); }
+.event-when { font-weight: 600; color: var(--muted); margin: 0 0 14px; }
+.event-tz { margin-left: 8px; font-weight: 500; }
+.event-summary { font-size: 1.1rem; }
+.event-people ul, .agenda-list { padding-left: 0; list-style: none; }
+.event-people li { padding: 4px 0; border-bottom: 1px solid var(--border); }
+.event-people li:last-child { border-bottom: 0; }
+.talk-title { color: var(--muted); }
+.agenda-list li {
+  padding: 6px 0 6px 14px;
+  border-left: 2px solid var(--border);
+  margin-left: 2px;
+  font-variant-numeric: tabular-nums;
+}
+.event-body { margin-top: 8px; }
+.event-body h2 { font-size: 1.2rem; }
+
+/* --- Join box / subscribe ---------------------------------------------- */
+.join-box {
+  margin-top: 32px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+}
+.join-box h2 { margin-top: 0; }
+.join-actions, .subscribe-buttons { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+
+/* --- Calendar embed ----------------------------------------------------- */
+.calendar-embed {
+  position: relative;
+  width: 100%;
+  /* Aspect-ratio box keeps the iframe responsive on small screens. */
+  aspect-ratio: 4 / 3;
+  max-width: 800px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface);
+}
+.calendar-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+.help-note {
+  background: var(--surface-2);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+/* --- Utility ------------------------------------------------------------ */
+.lede { font-size: 1.15rem; color: var(--text); }
+hr { border: 0; border-top: 1px solid var(--border); margin: 32px 0; }
+
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  h1 { font-size: 1.6rem; }
+  .btn { width: 100%; text-align: center; }
+}

@@ -1,0 +1,74 @@
+---
+layout: default
+---
+{%- assign is_past = false -%}
+{%- assign now = site.time | date: "%s" | plus: 0 -%}
+{%- assign ev = page.date | date: "%s" | plus: 0 -%}
+{%- if ev < now -%}{%- assign is_past = true -%}{%- endif -%}
+
+<article class="event-detail">
+  <p class="event-back"><a href="{{ '/events/' | relative_url }}">← All events</a></p>
+
+  {% if is_past %}<p class="event-status past">Past event</p>{% else %}<p class="event-status upcoming">Upcoming event</p>{% endif %}
+
+  <h1>{{ page.title }}</h1>
+
+  <p class="event-when">
+    <time datetime="{{ page.date | date_to_xmlschema }}">
+      {{ page.date | date: "%A %-d %B %Y" }}, {{ page.date | date: "%H:%M" }}{% if page.end_time %}–{{ page.end_time }}{% endif %}
+    </time>
+    {% if page.timezone %}<span class="event-tz">{{ page.timezone }}</span>{% endif %}
+  </p>
+
+  {% if page.summary %}<p class="event-summary">{{ page.summary }}</p>{% endif %}
+
+  {% if page.hosts and page.hosts.size > 0 %}
+  <section class="event-people">
+    <h2>Host{% if page.hosts.size > 1 %}s{% endif %}</h2>
+    <ul>
+      {% for h in page.hosts %}<li><strong>{{ h.name }}</strong>{% if h.affiliation %} — {{ h.affiliation }}{% endif %}</li>{% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if page.speakers and page.speakers.size > 0 %}
+  <section class="event-people">
+    <h2>Speaker{% if page.speakers.size > 1 %}s{% endif %}</h2>
+    <ul>
+      {% for s in page.speakers %}<li><strong>{{ s.name }}</strong>{% if s.affiliation %} — {{ s.affiliation }}{% endif %}{% if s.talk %}<br><span class="talk-title">“{{ s.talk }}”</span>{% endif %}</li>{% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if page.agenda and page.agenda.size > 0 %}
+  <section class="event-agenda">
+    <h2>Agenda</h2>
+    <ul class="agenda-list">
+      {% for item in page.agenda %}<li>{{ item }}</li>{% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if content != "" %}
+  <section class="event-body">
+    {{ content }}
+  </section>
+  {% endif %}
+
+  <aside class="join-box">
+    <h2>How to join</h2>
+    {% if is_past %}
+    <p>This session has already taken place. Subscribe to the calendar so you don’t miss the next one.</p>
+    {% else %}
+    <p>
+      The Zoom joining link is included in the calendar event. Add the MOSAIC
+      calendar to your own calendar and you’ll have the link ready at the click
+      of a button — plus a reminder before we start.
+    </p>
+    {% endif %}
+    <p class="join-actions">
+      <a class="btn btn-primary" href="{{ '/calendar/' | relative_url }}">Subscribe to the calendar</a>
+      <a class="btn" href="mailto:{{ site.mailing_list_signup_email }}?subject=Join%20the%20MOSAIC%20mailing%20list">Join the mailing list</a>
+    </p>
+  </aside>
+</article>

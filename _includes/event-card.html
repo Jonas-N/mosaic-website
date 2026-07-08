@@ -1,0 +1,19 @@
+{%- comment -%}
+  Renders a summary card for one event. Expects `include.event`.
+{%- endcomment -%}
+<li class="event-card">
+  <p class="event-card-date">
+    <time datetime="{{ include.event.date | date_to_xmlschema }}">
+      {{ include.event.date | date: "%-d %b %Y" }}
+    </time>
+    <span class="event-card-time">{{ include.event.date | date: "%H:%M" }}{% if include.event.end_time %}–{{ include.event.end_time }}{% endif %}{% if include.event.timezone %} {{ include.event.timezone }}{% endif %}</span>
+  </p>
+  <h3 class="event-card-title"><a href="{{ include.event.url | relative_url }}">{{ include.event.title }}</a></h3>
+  {% if include.event.summary %}<p class="event-card-summary">{{ include.event.summary | strip_html | truncatewords: 40 }}</p>{% endif %}
+  {% if include.event.speakers and include.event.speakers.size > 0 %}
+  <p class="event-card-speakers">
+    {% for s in include.event.speakers %}{{ s.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+  </p>
+  {% endif %}
+  <p class="event-card-more"><a href="{{ include.event.url | relative_url }}">Details →</a></p>
+</li>

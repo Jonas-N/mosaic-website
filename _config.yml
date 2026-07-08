@@ -1,0 +1,61 @@
+# --- MOSAIC website configuration ---------------------------------------
+# This file is the single source of truth for site-wide settings. Edit the
+# values here rather than hard-coding them in pages or layouts.
+
+title: "MOSAIC"
+tagline: "Multimodal Social Interaction Group"
+description: >-
+  MOSAIC (Multimodal Social Interaction Group) is an international community of
+  200+ scholars who meet monthly to discuss pressing topics in social
+  interaction research. Our monthly Grand Challenge seminars are open to
+  everyone.
+
+# The University of Glasgow research group behind MOSAIC.
+institution: "University of Glasgow"
+
+# --- URL settings -------------------------------------------------------
+# For a project site served at https://<owner>.github.io/mosaic-website
+# set `baseurl` to "/mosaic-website" and `url` to "https://<owner>.github.io".
+# If you later move to a user/org site or a custom domain, set baseurl to "".
+baseurl: "/mosaic-website"
+url: ""
+
+# --- Google Calendar ----------------------------------------------------
+# The public MOSAIC calendar. These are the exact links from Google Calendar
+# > Settings > (this calendar) > "Integrate calendar".
+google_calendar_id: "41f064a455098175810612da6c4f8988081d70906245268344e7b8285e2d5945@group.calendar.google.com"
+google_calendar_embed_src: "https://calendar.google.com/calendar/embed?src=41f064a455098175810612da6c4f8988081d70906245268344e7b8285e2d5945%40group.calendar.google.com&ctz=Europe%2FParis"
+google_calendar_ical_url: "https://calendar.google.com/calendar/ical/41f064a455098175810612da6c4f8988081d70906245268344e7b8285e2d5945%40group.calendar.google.com/public/basic.ics"
+
+# --- Contact & social ---------------------------------------------------
+mailing_list_signup_email: "jonas.noelle@live.de"
+mailing_list_address: "mosaic@psy.gla.ac.uk"
+social:
+  twitter: "https://x.com/UofG_MOSAIC"
+  bluesky: "https://bsky.app/profile/uofg-mosaic.bsky.social"
+
+# --- Jekyll collections -------------------------------------------------
+collections:
+  events:
+    output: true
+    permalink: /events/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: events
+    values:
+      layout: event
+
+# --- Build settings -----------------------------------------------------
+timezone: Europe/London
+markdown: kramdown
+# Files whose names start with an underscore (e.g. _events/_TEMPLATE.md) are
+# ignored by Jekyll, so the template never appears on the live site.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - CONTRIBUTING.md
+  - communications
+  - vendor

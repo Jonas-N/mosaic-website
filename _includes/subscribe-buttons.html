@@ -1,0 +1,15 @@
+{%- comment -%}
+  Reusable calendar-subscribe buttons. Reads calendar URLs from _config.yml.
+  The webcal:// variant makes Apple Calendar / Outlook subscribe (live-updating)
+  rather than just importing a one-off snapshot.
+{%- endcomment -%}
+{%- assign webcal = site.google_calendar_ical_url | replace: "https://", "webcal://" -%}
+<div class="subscribe-buttons">
+  <a class="btn btn-primary"
+     href="https://calendar.google.com/calendar/r?cid={{ site.google_calendar_id | uri_escape }}"
+     target="_blank" rel="noopener">Add to Google Calendar</a>
+  <a class="btn"
+     href="{{ webcal }}">Subscribe in Apple Calendar / Outlook</a>
+  <a class="btn"
+     href="{{ site.google_calendar_ical_url }}">Download .ics file</a>
+</div>
