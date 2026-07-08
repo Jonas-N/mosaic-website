@@ -62,6 +62,21 @@ h1 { font-size: 2rem; margin: 0.2em 0 0.4em; }
 h2 { font-size: 1.35rem; margin: 1.6em 0 0.5em; }
 h3 { font-size: 1.1rem; }
 
+/* --- Mosaic accent bar (brand colours from Grand Challenges banner) --- */
+.mosaic-bar {
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    #ff8c1f 0%,
+    #ff3c42 18%,
+    #c4244f 32%,
+    #830374 48%,
+    #1f5fa8 64%,
+    #0bd78f 80%,
+    #1ad9c9 100%
+  );
+}
+
 /* --- Header ------------------------------------------------------------- */
 .site-header {
   border-bottom: 1px solid var(--border);
@@ -76,17 +91,27 @@ h3 { font-size: 1.1rem; }
   align-items: center;
   justify-content: space-between;
   gap: 8px 16px;
-  padding-block: 12px;
+  padding-block: 10px;
 }
-.brand { display: flex; flex-direction: column; line-height: 1.1; }
-.brand:hover { text-decoration: none; }
-.brand-mark {
-  font-weight: 800;
-  letter-spacing: 0.06em;
-  font-size: 1.35rem;
-  color: var(--brand);
+.brand {
+  display: flex;
+  align-items: center;
+  line-height: 0;
 }
-.brand-sub { font-size: 0.8rem; color: var(--muted); }
+.brand:hover { text-decoration: none; opacity: 0.92; }
+.brand-logo {
+  height: 48px;
+  width: auto;
+  max-width: min(280px, 58vw);
+  display: block;
+  object-fit: contain;
+}
+/* Light logo (black wordmark) by default; dark logo (white wordmark) in dark mode */
+.brand-logo-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  .brand-logo-light { display: none; }
+  .brand-logo-dark { display: block; }
+}
 .site-nav { display: flex; flex-wrap: wrap; gap: 4px; }
 .site-nav a {
   padding: 8px 12px;
@@ -107,6 +132,12 @@ main.wrap { padding-block: 32px 56px; }
   padding-block: 24px;
 }
 .site-footer p { margin: 6px 0; }
+.footer-brand { margin-bottom: 10px; }
+.footer-logo {
+  height: 28px;
+  width: auto;
+  opacity: 0.85;
+}
 .footer-links a { color: var(--muted); }
 .footer-links span { margin-inline: 6px; color: var(--border); }
 
@@ -252,6 +283,77 @@ main.wrap { padding-block: 32px 56px; }
   color: var(--muted);
 }
 
+/* --- Team page ---------------------------------------------------------- */
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+  display: grid;
+  gap: 16px;
+}
+.team-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 16px 18px;
+}
+.team-card-compact { padding: 12px 16px; }
+.team-photo-ring {
+  flex-shrink: 0;
+  padding: 3px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff8c1f, #c4244f 40%, #1f5fa8 70%, #0bd78f);
+  line-height: 0;
+}
+.team-photo-ring-sm {
+  padding: 2px;
+  background: var(--border);
+}
+.team-photo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  background: var(--surface-2);
+}
+video.team-photo {
+  object-fit: cover;
+  pointer-events: none;
+}
+.team-photo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  color: var(--brand);
+  background: var(--surface-2);
+}
+.team-info { min-width: 0; }
+.team-name {
+  margin: 0 0 4px;
+  font-size: 1.15rem;
+}
+.team-role {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+.team-list-alumni .team-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0;
+}
+
 /* --- Utility ------------------------------------------------------------ */
 .lede { font-size: 1.15rem; color: var(--text); }
 hr { border: 0; border-top: 1px solid var(--border); margin: 32px 0; }
@@ -260,4 +362,26 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 32px 0; }
   body { font-size: 16px; }
   h1 { font-size: 1.6rem; }
   .btn { width: 100%; text-align: center; }
+  .brand-logo { height: 40px; }
+  .team-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+  .team-photo { width: 112px; height: 112px; }
+  .team-card-compact {
+    flex-direction: row;
+    text-align: left;
+  }
+  .team-card-compact .team-photo-placeholder {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* Footer logo dark-mode swap (same classes as header) */
+.footer-logo.brand-logo-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  .footer-logo.brand-logo-light { display: none; }
+  .footer-logo.brand-logo-dark { display: block; }
 }

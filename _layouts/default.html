@@ -6,19 +6,32 @@
   <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }} — {{ site.tagline }}{% endif %}</title>
   <meta name="description" content="{{ page.summary | default: site.description | strip_newlines }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ '/assets/img/MOSAIC_logo_small_icon.png' | relative_url }}">
   <link rel="alternate" type="text/calendar" title="MOSAIC events" href="{{ site.google_calendar_ical_url }}">
 </head>
 <body>
   <header class="site-header">
+    <div class="mosaic-bar" aria-hidden="true"></div>
     <div class="wrap">
       <a class="brand" href="{{ '/' | relative_url }}">
-        <span class="brand-mark">MOSAIC</span>
-        <span class="brand-sub">{{ site.tagline }}</span>
+        <img
+          class="brand-logo brand-logo-light"
+          src="{{ '/assets/img/MOSAIC_logo_banner.svg' | relative_url }}"
+          width="280"
+          height="56"
+          alt="MOSAIC — Multimodal Social Interactions">
+        <img
+          class="brand-logo brand-logo-dark"
+          src="{{ '/assets/img/MOSAIC_logo_banner_dark.png' | relative_url }}"
+          width="280"
+          height="56"
+          alt="MOSAIC — Multimodal Social Interactions">
       </a>
       <nav class="site-nav" aria-label="Primary">
         <a href="{{ '/' | relative_url }}">Home</a>
         <a href="{{ '/events/' | relative_url }}">Events</a>
         <a href="{{ '/calendar/' | relative_url }}">Calendar</a>
+        <a href="{{ '/team/' | relative_url }}">Team</a>
         <a href="{{ '/about/' | relative_url }}">About</a>
       </nav>
     </div>
@@ -30,6 +43,20 @@
 
   <footer class="site-footer">
     <div class="wrap">
+      <div class="footer-brand">
+        <img
+          class="footer-logo brand-logo-light"
+          src="{{ '/assets/img/MOSAIC_logo_banner.svg' | relative_url }}"
+          width="160"
+          height="32"
+          alt="">
+        <img
+          class="footer-logo brand-logo-dark"
+          src="{{ '/assets/img/MOSAIC_logo_banner_dark.png' | relative_url }}"
+          width="160"
+          height="32"
+          alt="">
+      </div>
       <p>
         <strong>{{ site.title }}</strong> — {{ site.tagline }}, {{ site.institution }}.
       </p>
