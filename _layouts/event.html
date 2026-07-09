@@ -68,7 +68,7 @@ layout: default
     {% endif %}
     <p class="join-actions">
       <a class="btn btn-primary" href="{{ '/calendar/' | relative_url }}">Subscribe to the calendar</a>
-      <a class="btn" href="mailto:{{ site.mailing_list_signup_email }}?subject=Join%20the%20MOSAIC%20mailing%20list">Join the mailing list</a>
+      {% include mailing-list-join-link.html class="btn" %}
     </p>
   </aside>
 </article>

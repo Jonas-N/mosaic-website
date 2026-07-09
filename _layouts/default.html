@@ -64,7 +64,7 @@
         <p class="footer-links">
           <a href="{{ '/calendar/' | relative_url }}">Subscribe to the calendar</a>
           <span aria-hidden="true">·</span>
-          <a href="mailto:{{ site.mailing_list_signup_email }}?subject=Join%20the%20MOSAIC%20mailing%20list">Join the mailing list</a>
+          {% include mailing-list-join-link.html %}
         </p>
         <p class="footer-social">
           <a class="social-icon" href="{{ site.social.twitter }}" rel="me noopener" target="_blank" aria-label="MOSAIC on X / Twitter">

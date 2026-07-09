@@ -28,8 +28,15 @@ google_calendar_embed_src: "https://calendar.google.com/calendar/embed?src=41f06
 google_calendar_ical_url: "https://calendar.google.com/calendar/ical/41f064a455098175810612da6c4f8988081d70906245268344e7b8285e2d5945%40group.calendar.google.com/public/basic.ics"
 
 # --- Contact & social ---------------------------------------------------
+# UofG Sympa list (owner-approval subscribe; web UI is VPN/campus only).
+# Public join is by email command to Sympa — not the lists.cent.gla.ac.uk website.
+mailing_list_name: "spn-mosaic"
+mailing_list_address: "spn-mosaic@lists.cent.gla.ac.uk"
+mailing_list_command_email: "sympa@lists.cent.gla.ac.uk"
+# Subject template: people must replace FIRST_NAME and LAST_NAME with their name.
+mailing_list_subscribe_subject: "SUB spn-mosaic FIRST_NAME LAST_NAME"
+# Human contact (fallback / “email us”); not the list server.
 mailing_list_signup_email: "mosaic.soc@gmail.com"
-mailing_list_address: "mosaic@psy.gla.ac.uk"
 social:
   twitter: "https://x.com/UofG_MOSAIC"
   bluesky: "https://bsky.app/profile/uofg-mosaic.bsky.social"

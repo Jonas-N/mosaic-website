@@ -1,0 +1,5 @@
+{%- comment -%}
+  One-click mailto that opens a SUBSCRIBE request to UofG Sympa.
+  Subject includes FIRST_NAME LAST_NAME placeholders — the body reminds users to replace them.
+{%- endcomment -%}
+<a {% if include.class %}class="{{ include.class }}" {% endif %}href="mailto:{{ site.mailing_list_command_email }}?subject={{ site.mailing_list_subscribe_subject | uri_escape }}&amp;body={{ 'Please replace FIRST_NAME and LAST_NAME in the subject line with your own first and last name, then send this email (you can leave the body empty or delete this note).' | uri_escape }}">{% if include.label %}{{ include.label }}{% else %}Join the mailing list{% endif %}</a>
