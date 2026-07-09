@@ -35,22 +35,22 @@ curious. Please feel free to spread the word.
 {: #mailing-list}
 
 Announcements and updates go to the MOSAIC list at the University of Glasgow
-(`{{ site.mailing_list_address }}`). Anyone can request to join; list owners
-approve requests (no university login required for you).
+(`{{ site.mailing_list_address }}`). Anyone can request to join (no university
+login required for you).
 
 1. Send an email **to** [{{ site.mailing_list_command_email }}](mailto:{{ site.mailing_list_command_email }}?subject={{ site.mailing_list_subscribe_subject | uri_escape }}&body={{ 'Please replace FIRST_NAME and LAST_NAME in the subject line with your own first and last name, then send this email (you can leave the body empty or delete this note).' | uri_escape }}).
-2. Set the **subject** exactly like this, but **put your own name** in place of the placeholders:
+2. Set the **subject line** exactly like this, but **put your own name** in place of the placeholders:
 
    `{{ site.mailing_list_subscribe_subject }}`
 
-   Example: if your name is Ada Lovelace, use:
+   Example: if your name is Ada Lovelace, use the following as the email’s subject line:
 
    `SUB spn-mosaic Ada Lovelace`
 
-3. You can leave the **body empty**. Send the message from the address you want on the list.
+3. You can leave the **email body** empty. Send the message from the address you want on the list.
 4. You should get a short note that your request was sent to the list owners. After we approve it, you’ll receive a welcome message.
 
-**Trouble joining?** Email [{{ site.mailing_list_signup_email }}](mailto:{{ site.mailing_list_signup_email }}?subject=Join%20the%20MOSAIC%20mailing%20list) and we’ll add you.
+**Trouble joining?** Email [{{ site.mailing_list_signup_email }}](mailto:{{ site.mailing_list_signup_email }}?subject=Join%20the%20MOSAIC%20mailing%20list) and we’ll add you manually.
 
 ## Follow us
 
