@@ -505,16 +505,17 @@ video.team-photo {
 }
 
 /* --- Members world map (About) ------------------------------------------ */
-.members-map {
+.members-map,
+.members-map.leaflet-container {
   width: 100%;
-  height: min(420px, 70vw);
-  min-height: 280px;
+  height: 420px;
+  min-height: 420px;
   margin: 16px 0 8px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  overflow: hidden;
-  background: var(--surface);
+  background: #dce4ec;
   z-index: 0;
+  font: inherit;
 }
 .members-map-meta {
   margin: 0 0 8px;
@@ -540,8 +541,19 @@ video.team-photo {
   overflow: auto;
 }
 .map-popup-inst .map-count { color: #5b6472; font-weight: 500; }
-/* Leaflet controls sit above sticky header slightly */
-.leaflet-container { font: inherit; }
+/* Ensure Leaflet panes fill the fixed-height box */
+.members-map .leaflet-pane,
+.members-map .leaflet-map-pane,
+.members-map .leaflet-tile-pane {
+  z-index: auto;
+}
+@media (max-width: 480px) {
+  .members-map,
+  .members-map.leaflet-container {
+    height: 320px;
+    min-height: 320px;
+  }
+}
 
 /* --- Utility ------------------------------------------------------------ */
 .lede { font-size: 1.15rem; color: var(--text); }

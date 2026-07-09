@@ -2,6 +2,7 @@
 layout: default
 title: About
 permalink: /about/
+leaflet: true
 ---
 
 # About MOSAIC
@@ -38,11 +39,8 @@ MOSAIC members work at universities and research institutes around the world.
 Each dot is a city with one or more affiliated members (size ≈ how many).
 
 <div id="members-map" class="members-map" data-src="{{ '/assets/data/member-locations.json' | relative_url }}" role="img" aria-label="World map of MOSAIC member institutions"></div>
-<p id="members-map-meta" class="members-map-meta"></p>
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-<script src="{{ '/assets/js/members-map.js' | relative_url }}" defer></script>
+<p id="members-map-meta" class="members-map-meta"></p>
 
 ## Join the mailing list
 {: #mailing-list}
