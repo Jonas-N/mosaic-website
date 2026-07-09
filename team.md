@@ -91,9 +91,7 @@ meeting. (Current organisers are listed above.)
   <li>Chaona Chen</li>
   <li>Jay Davies</li>
   <li>Katie Hoemann</li>
-  <li>Limor Raviv</li>
   <li>Lukas Snoek</li>
-  <li>Tobias Theijll-Madsen</li>
 </ul>
 
 ## Want to get involved?
