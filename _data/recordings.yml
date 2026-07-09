@@ -1,0 +1,83 @@
+# Recording status for past MOSAIC sessions (public site — no Zoom passcodes).
+# Keys: event date as YYYY-MM-DD (matches event front-matter date).
+#
+# youtube: unlisted YouTube URL when archived
+# status:
+#   zoom_expired — had a Zoom cloud recording; link no longer works
+#   none         — no recording was made / none found
+#   partial      — only part of the session was recorded (and Zoom is gone)
+
+"2021-11-24":
+  status: none
+
+"2022-03-31":
+  status: none
+"2022-04-28":
+  status: zoom_expired
+"2022-05-26":
+  status: zoom_expired
+"2022-06-30":
+  youtube: "https://youtu.be/AHhLIudXv-o"
+"2022-09-29":
+  status: zoom_expired
+"2022-10-27":
+  status: zoom_expired
+"2022-11-24":
+  status: zoom_expired
+
+"2023-01-26":
+  youtube: "https://youtu.be/19EbYVm4H5I"
+"2023-02-23":
+  status: zoom_expired
+"2023-03-30":
+  status: zoom_expired
+"2023-04-27":
+  status: zoom_expired
+"2023-05-25":
+  status: zoom_expired
+"2023-06-29":
+  status: zoom_expired
+  note: "Open discussion only; talk not recorded (sensitive data)."
+"2023-09-28":
+  status: none
+"2023-10-26":
+  status: zoom_expired
+"2023-11-30":
+  status: zoom_expired
+
+"2024-01-25":
+  status: none
+"2024-02-29":
+  status: zoom_expired
+"2024-03-28":
+  status: none
+"2024-04-25":
+  status: zoom_expired
+"2024-05-30":
+  status: none
+"2024-09-26":
+  status: none
+"2024-10-31":
+  status: zoom_expired
+"2024-11-28":
+  status: zoom_expired
+
+"2025-01-30":
+  status: zoom_expired
+"2025-02-27":
+  status: zoom_expired
+"2025-04-24":
+  status: zoom_expired
+"2025-06-05":
+  status: zoom_expired
+"2025-09-18":
+  status: none
+"2025-10-16":
+  status: none
+"2025-11-20":
+  status: none
+
+"2026-04-16":
+  status: none
+"2026-05-21":
+  status: none
