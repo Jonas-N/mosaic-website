@@ -14,17 +14,16 @@ Add the MOSAIC calendar to your own calendar app once, and every Grand Challenge
 <div class="help-note" style="margin-top:16px">
   <strong>Which button?</strong>
   <ul style="margin:8px 0 0">
-    <li><strong>Google Calendar</strong> (incl. Google Workspace): <em>Add to Google Calendar</em>.</li>
-    <li><strong>Apple Calendar</strong> (Mac / iPhone / iPad): <em>Subscribe in Apple Calendar</em> — opens a live subscription.</li>
-    <li><strong>Outlook on the web</strong> (browser, work or personal): <em>Subscribe in Outlook</em> — opens Outlook’s “add calendar from web” flow.</li>
-    <li><strong>Outlook desktop</strong> (Windows app): the button above may not hand off cleanly. Instead:
+    <li><strong>Google Calendar</strong> (incl. Google Workspace / Gmail app): <em>Add to Google Calendar</em>.</li>
+    <li><strong>Apple Calendar</strong> (iPhone, iPad, Mac): <em>Subscribe in Apple Calendar</em>. On iPhone, calendar links of this type always open Apple Calendar — that is normal.</li>
+    <li><strong>Outlook on iPhone:</strong> the Outlook app does <em>not</em> reliably subscribe to external calendar feeds the way Apple Calendar does. Easiest options:
       <ol style="margin:6px 0 0">
-        <li>Copy this feed URL:<br>
-          <code style="font-size:0.85em;word-break:break-all">{{ site.google_calendar_ical_url }}</code>
-        </li>
-        <li>In Outlook: <em>Add calendar</em> → <em>From internet</em> (or <em>Subscribe from web</em>) → paste the URL → name it “MOSAIC”.</li>
+        <li><strong>Recommended on iPhone:</strong> use <em>Subscribe in Apple Calendar</em> — you still get every MOSAIC date, reminder, and the Zoom link in the system Calendar app.</li>
+        <li>Or open this page in <strong>Safari</strong>, tap <em>Subscribe in Outlook</em>, and complete the flow in <strong>Outlook on the web</strong> (signed into your work/personal Microsoft account). The feed then appears in the Outlook app if that account is already added there.</li>
       </ol>
-      Older Outlook: <em>File</em> → <em>Account Settings</em> → <em>Internet Calendars</em> → <em>New</em> → paste the same URL.
+    </li>
+    <li><strong>Outlook on the web / Windows desktop:</strong> <em>Subscribe in Outlook</em>, or paste this feed URL under <em>Add calendar</em> → <em>From internet</em> / <em>Subscribe from web</em>:<br>
+      <code style="font-size:0.85em;word-break:break-all">{{ site.google_calendar_ical_url }}</code>
     </li>
     <li><strong>Download .ics</strong>: one-off import only (it will <em>not</em> auto-update when we add new sessions). Prefer a subscribe option when you can.</li>
   </ul>
