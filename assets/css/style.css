@@ -504,6 +504,45 @@ video.team-photo {
   font-size: 0.95rem;
 }
 
+/* --- Members world map (About) ------------------------------------------ */
+.members-map {
+  width: 100%;
+  height: min(420px, 70vw);
+  min-height: 280px;
+  margin: 16px 0 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface);
+  z-index: 0;
+}
+.members-map-meta {
+  margin: 0 0 8px;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+.map-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  color: var(--muted);
+  padding: 24px;
+  text-align: center;
+}
+.map-popup { font-size: 0.9rem; line-height: 1.4; min-width: 140px; }
+.map-popup-total { margin: 4px 0 8px; color: #5b6472; }
+.map-popup-inst {
+  margin: 0;
+  padding-left: 1.1em;
+  max-height: 160px;
+  overflow: auto;
+}
+.map-popup-inst .map-count { color: #5b6472; font-weight: 500; }
+/* Leaflet controls sit above sticky header slightly */
+.leaflet-container { font: inherit; }
+
 /* --- Utility ------------------------------------------------------------ */
 .lede { font-size: 1.15rem; color: var(--text); }
 hr { border: 0; border-top: 1px solid var(--border); margin: 32px 0; }

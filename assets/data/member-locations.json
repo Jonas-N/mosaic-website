@@ -1,0 +1,896 @@
+{
+    "generated":  "2026-07-09",
+    "source":  "MOSAIC members spreadsheet (affiliation + email domain; expired excluded)",
+    "member_count":  169,
+    "place_count":  64,
+    "places":  [
+                   {
+                       "city":  "Glasgow",
+                       "country":  "UK",
+                       "lat":  55.8721,
+                       "lon":  -4.2882,
+                       "count":  46,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of Glasgow",
+                                                "count":  10
+                                            },
+                                            {
+                                                "name":  "University of Glasgow (Computing Science)",
+                                                "count":  3
+                                            },
+                                            {
+                                                "name":  "University of Glasgow (Psychology \u0026 Neuroscience)",
+                                                "count":  31
+                                            },
+                                            {
+                                                "name":  "University of Glasgow / MPI",
+                                                "count":  2
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Nijmegen",
+                       "country":  "NL",
+                       "lat":  51.8417,
+                       "lon":  5.8528,
+                       "count":  23,
+                       "institutions":  [
+                                            {
+                                                "name":  "Donders Institute, Radboud University",
+                                                "count":  5
+                                            },
+                                            {
+                                                "name":  "MPI for Psycholinguistics",
+                                                "count":  16
+                                            },
+                                            {
+                                                "name":  "Radboud University",
+                                                "count":  2
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "London",
+                       "country":  "UK",
+                       "lat":  51.5246,
+                       "lon":  -0.134,
+                       "count":  7,
+                       "institutions":  [
+                                            {
+                                                "name":  "Goldsmiths, University of London",
+                                                "count":  1
+                                            },
+                                            {
+                                                "name":  "University College London",
+                                                "count":  6
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Edinburgh",
+                       "country":  "UK",
+                       "lat":  55.9445,
+                       "lon":  -3.1892,
+                       "count":  5,
+                       "institutions":  [
+                                            {
+                                                "name":  "Heriot-Watt University",
+                                                "count":  1
+                                            },
+                                            {
+                                                "name":  "University of Edinburgh",
+                                                "count":  4
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Birmingham",
+                       "country":  "UK",
+                       "lat":  52.4508,
+                       "lon":  -1.9305,
+                       "count":  4,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of Birmingham",
+                                                "count":  4
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Bristol",
+                       "country":  "UK",
+                       "lat":  51.4584,
+                       "lon":  -2.602,
+                       "count":  4,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of Bristol",
+                                                "count":  4
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Hanover, NH",
+                       "country":  "USA",
+                       "lat":  43.7044,
+                       "lon":  -72.2887,
+                       "count":  3,
+                       "institutions":  [
+                                            {
+                                                "name":  "Dartmouth College",
+                                                "count":  3
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Vienna",
+                       "country":  "AT",
+                       "lat":  48.213,
+                       "lon":  16.396,
+                       "count":  3,
+                       "institutions":  [
+                                            {
+                                                "name":  "Central European University",
+                                                "count":  1
+                                            },
+                                            {
+                                                "name":  "University of Vienna",
+                                                "count":  2
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Nottingham",
+                       "country":  "UK",
+                       "lat":  52.9388,
+                       "lon":  -1.1981,
+                       "count":  3,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of Nottingham",
+                                                "count":  3
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Tilburg",
+                       "country":  "NL",
+                       "lat":  51.5636,
+                       "lon":  5.0919,
+                       "count":  3,
+                       "institutions":  [
+                                            {
+                                                "name":  "Tilburg University",
+                                                "count":  3
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Torun",
+                       "country":  "PL",
+                       "lat":  53.0185,
+                       "lon":  18.572,
+                       "count":  3,
+                       "institutions":  [
+                                            {
+                                                "name":  "Nicolaus Copernicus University",
+                                                "count":  3
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Berkeley, CA",
+                       "country":  "USA",
+                       "lat":  37.8719,
+                       "lon":  -122.2585,
+                       "count":  2,
+                       "institutions":  [
+                                            {
+                                                "name":  "UC Berkeley",
+                                                "count":  2
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Chicago, IL",
+                       "country":  "USA",
+                       "lat":  41.7886,
+                       "lon":  -87.5987,
+                       "count":  2,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of Chicago",
+                                                "count":  2
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Leuven",
+                       "country":  "BE",
+                       "lat":  50.8798,
+                       "lon":  4.7005,
+                       "count":  2,
+                       "institutions":  [
+                                            {
+                                                "name":  "KU Leuven",
+                                                "count":  2
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Hamburg",
+                       "country":  "DE",
+                       "lat":  53.59,
+                       "lon":  10,
+                       "count":  2,
+                       "institutions":  [
+                                            {
+                                                "name":  "UKE Hamburg",
+                                                "count":  1
+                                            },
+                                            {
+                                                "name":  "University of Hamburg",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Goettingen",
+                       "country":  "DE",
+                       "lat":  51.5409,
+                       "lon":  9.9355,
+                       "count":  2,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of Goettingen",
+                                                "count":  2
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Durham",
+                       "country":  "UK",
+                       "lat":  54.7753,
+                       "lon":  -1.5849,
+                       "count":  2,
+                       "institutions":  [
+                                            {
+                                                "name":  "Durham University",
+                                                "count":  2
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Berlin",
+                       "country":  "DE",
+                       "lat":  52.52,
+                       "lon":  13.405,
+                       "count":  2,
+                       "institutions":  [
+                                            {
+                                                "name":  "Leibniz-ZAS Berlin",
+                                                "count":  1
+                                            },
+                                            {
+                                                "name":  "MPI for Human Development",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Dublin",
+                       "country":  "IE",
+                       "lat":  53.3067,
+                       "lon":  -6.2214,
+                       "count":  2,
+                       "institutions":  [
+                                            {
+                                                "name":  "Trinity College Dublin",
+                                                "count":  1
+                                            },
+                                            {
+                                                "name":  "University College Dublin",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Aarhus",
+                       "country":  "DK",
+                       "lat":  56.1681,
+                       "lon":  10.203,
+                       "count":  2,
+                       "institutions":  [
+                                            {
+                                                "name":  "Aarhus University",
+                                                "count":  2
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Copenhagen",
+                       "country":  "DK",
+                       "lat":  55.68,
+                       "lon":  12.572,
+                       "count":  2,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of Copenhagen",
+                                                "count":  1
+                                            },
+                                            {
+                                                "name":  "WSAudiology",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Amsterdam",
+                       "country":  "NL",
+                       "lat":  52.334,
+                       "lon":  4.866,
+                       "count":  2,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of Amsterdam",
+                                                "count":  1
+                                            },
+                                            {
+                                                "name":  "Vrije Universiteit Amsterdam",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Stockholm",
+                       "country":  "SE",
+                       "lat":  59.35,
+                       "lon":  18.07,
+                       "count":  2,
+                       "institutions":  [
+                                            {
+                                                "name":  "KTH / ORCA Europe",
+                                                "count":  1
+                                            },
+                                            {
+                                                "name":  "ORCA Labs",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Vancouver, BC",
+                       "country":  "CA",
+                       "lat":  49.2606,
+                       "lon":  -123.246,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of British Columbia",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Aberdeen",
+                       "country":  "UK",
+                       "lat":  57.165,
+                       "lon":  -2.102,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of Aberdeen",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Milton Keynes",
+                       "country":  "UK",
+                       "lat":  52.025,
+                       "lon":  -0.71,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "The Open University",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Manchester",
+                       "country":  "UK",
+                       "lat":  53.4668,
+                       "lon":  -2.2339,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of Manchester",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "San Sebastian",
+                       "country":  "ES",
+                       "lat":  43.294,
+                       "lon":  -1.986,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "BCBL",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Logan, UT",
+                       "country":  "USA",
+                       "lat":  41.745,
+                       "lon":  -111.81,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "Utah State University",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Haifa",
+                       "country":  "IL",
+                       "lat":  32.762,
+                       "lon":  35.019,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of Haifa",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "York",
+                       "country":  "UK",
+                       "lat":  53.946,
+                       "lon":  -1.051,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of York",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Frankfurt",
+                       "country":  "DE",
+                       "lat":  50.1109,
+                       "lon":  8.6821,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "MPI for Empirical Aesthetics",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Zurich",
+                       "country":  "CH",
+                       "lat":  47.374,
+                       "lon":  8.549,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of Zurich",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Guadalajara",
+                       "country":  "MX",
+                       "lat":  20.674,
+                       "lon":  -103.359,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "Universidad de Guadalajara",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Munich",
+                       "country":  "DE",
+                       "lat":  48.149,
+                       "lon":  11.568,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "Technical University of Munich",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Providence, RI",
+                       "country":  "USA",
+                       "lat":  41.8268,
+                       "lon":  -71.4025,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "Brown University",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Merced, CA",
+                       "country":  "USA",
+                       "lat":  37.3661,
+                       "lon":  -120.424,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "UC Merced",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Paris",
+                       "country":  "FR",
+                       "lat":  48.849,
+                       "lon":  2.343,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "Sorbonne Nouvelle / Paris",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Cork",
+                       "country":  "IE",
+                       "lat":  51.893,
+                       "lon":  -8.492,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "University College Cork",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Dresden",
+                       "country":  "DE",
+                       "lat":  51.028,
+                       "lon":  13.727,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "TU Dresden",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Prague",
+                       "country":  "CZ",
+                       "lat":  50.088,
+                       "lon":  14.421,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "Charles University (UFAL)",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "New York, NY",
+                       "country":  "USA",
+                       "lat":  40.8505,
+                       "lon":  -73.929,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "Yeshiva University",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Utrecht",
+                       "country":  "NL",
+                       "lat":  52.085,
+                       "lon":  5.175,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "Utrecht University",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Potsdam",
+                       "country":  "DE",
+                       "lat":  52.401,
+                       "lon":  13.012,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of Potsdam",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Cologne",
+                       "country":  "DE",
+                       "lat":  50.928,
+                       "lon":  6.928,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of Cologne",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Lyngby",
+                       "country":  "DK",
+                       "lat":  55.785,
+                       "lon":  12.521,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "Technical University of Denmark",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Sheffield",
+                       "country":  "UK",
+                       "lat":  53.3811,
+                       "lon":  -1.4882,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of Sheffield",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Ankara",
+                       "country":  "TR",
+                       "lat":  39.891,
+                       "lon":  32.78,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "Middle East Technical University",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Oxford",
+                       "country":  "UK",
+                       "lat":  51.7548,
+                       "lon":  -1.2544,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of Oxford",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Burnaby, BC",
+                       "country":  "CA",
+                       "lat":  49.2781,
+                       "lon":  -122.9199,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "Simon Fraser University",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Coventry",
+                       "country":  "UK",
+                       "lat":  52.3793,
+                       "lon":  -1.5615,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of Warwick",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Seville",
+                       "country":  "ES",
+                       "lat":  37.38,
+                       "lon":  -5.99,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of Seville",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Regensburg",
+                       "country":  "DE",
+                       "lat":  49,
+                       "lon":  12.093,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of Regensburg",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Groningen",
+                       "country":  "NL",
+                       "lat":  53.219,
+                       "lon":  6.567,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of Groningen",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Evanston, IL",
+                       "country":  "USA",
+                       "lat":  42.056,
+                       "lon":  -87.675,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "Northwestern University",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Magdeburg",
+                       "country":  "DE",
+                       "lat":  52.14,
+                       "lon":  11.64,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "Otto von Guericke University",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Brussels",
+                       "country":  "BE",
+                       "lat":  50.822,
+                       "lon":  4.392,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "Vrije Universiteit Brussel",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Barcelona",
+                       "country":  "ES",
+                       "lat":  41.386,
+                       "lon":  2.163,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of Barcelona",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Innsbruck",
+                       "country":  "AT",
+                       "lat":  47.264,
+                       "lon":  11.385,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of Innsbruck",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Besancon",
+                       "country":  "FR",
+                       "lat":  47.241,
+                       "lon":  5.988,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "FEMTO-ST Institute",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Atlanta, GA",
+                       "country":  "USA",
+                       "lat":  33.7925,
+                       "lon":  -84.3239,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "Emory University",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Sao Paulo",
+                       "country":  "BR",
+                       "lat":  -23.561,
+                       "lon":  -46.73,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "University of Sao Paulo",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Leiden",
+                       "country":  "NL",
+                       "lat":  52.157,
+                       "lon":  4.485,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "Leiden University",
+                                                "count":  1
+                                            }
+                                        ]
+                   },
+                   {
+                       "city":  "Accra",
+                       "country":  "GH",
+                       "lat":  5.65,
+                       "lon":  -0.186,
+                       "count":  1,
+                       "institutions":  [
+                                            {
+                                                "name":  "AIMS",
+                                                "count":  1
+                                            }
+                                        ]
+                   }
+               ]
+}
