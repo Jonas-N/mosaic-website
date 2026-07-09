@@ -9,7 +9,7 @@ title: Home
   <p class="lede">
     Every month we host a <strong>Grand Challenge</strong>: an online session where
     an international community of 200+ scholars digs into a pressing topic in
-    social interaction research. Talks, demos, and open discussion — all on Zoom.
+    social interaction research. Talks, demos, tutorials, and open discussion — all on Zoom.
   </p>
   <div class="cta-row">
     <a class="btn btn-primary" href="{{ '/calendar/' | relative_url }}">Subscribe to the calendar</a>
