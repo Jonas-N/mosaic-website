@@ -113,13 +113,11 @@
         }
 
         var meta = document.getElementById("members-map-meta");
-        if (meta && data.member_count) {
+        if (meta) {
           meta.textContent =
-            "Based on " +
-            data.member_count +
-            " list members across " +
+            "Based on MOSAIC list members across " +
             data.place_count +
-            " places (institutions inferred from the members list; approximate locations).";
+            " places (institutions from the members list; approximate locations).";
         }
 
         // Leaflet often needs a second measure after layout/tiles
