@@ -82,8 +82,8 @@ sessions, and welcoming new members into the community.
 
 ## Guest hosts
 
-People from outside the current team who have hosted a Grand Challenge or MOSAIC
-meeting. (Current organisers are listed above.)
+People from the MOSAIC community who have hosted a Grand Challenge or MOSAIC
+meeting.
 
 <ul class="host-name-list">
   <li>Angelica Lim</li>
