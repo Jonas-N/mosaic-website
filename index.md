@@ -14,6 +14,7 @@ title: Home
   <div class="cta-row">
     <a class="btn btn-primary" href="{{ '/calendar/' | relative_url }}">Subscribe to the calendar</a>
     <a class="btn" href="{{ '/events/' | relative_url }}">Browse events</a>
+    {% include mailing-list-join-link.html class="btn" label="Subscribe to mailing list" %}
   </div>
 </section>
 
