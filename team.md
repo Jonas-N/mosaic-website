@@ -23,11 +23,11 @@ sessions, and welcoming new members into the community.
   </li>
   <li class="team-card">
     <div class="team-photo-ring">
-      <video class="team-photo" src="{{ '/assets/img/team/jonas.webm' | relative_url }}" autoplay loop muted playsinline aria-label="Jonas Nölle"></video>
+      <img class="team-photo" src="{{ '/assets/img/team/jonas.jpg' | relative_url }}" alt="Jonas Nölle" width="120" height="120">
     </div>
     <div class="team-info">
       <h3 class="team-name"><a href="https://linktr.ee/jonasnoelle" rel="noopener" target="_blank">Jonas Nölle</a></h3>
-      <p class="team-role">Unemployed bum and vibe coder, WFH, Blue Planet</p>
+      <p class="team-role">Postdoc, Centre for Language Evolution Studies, Nicolaus Copernicus University in Toruń</p>
     </div>
   </li>
   <li class="team-card">
