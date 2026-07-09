@@ -80,6 +80,22 @@ sessions, and welcoming new members into the community.
   </li>
 </ul>
 
+## Guest hosts
+
+People from outside the current team who have hosted a Grand Challenge or MOSAIC
+meeting. (Current organisers are listed above.)
+
+<ul class="host-name-list">
+  <li>Angelica Lim</li>
+  <li>Anita Slonimska</li>
+  <li>Chaona Chen</li>
+  <li>Jay Davies</li>
+  <li>Katie Hoemann</li>
+  <li>Limor Raviv</li>
+  <li>Lukas Snoek</li>
+  <li>Tobias Theijll-Madsen</li>
+</ul>
+
 ## Want to get involved?
 
 We're always glad to hear from people who'd like to help organise sessions,

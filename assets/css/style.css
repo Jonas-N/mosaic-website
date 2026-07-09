@@ -485,6 +485,25 @@ video.team-photo {
   margin: 0;
 }
 
+/* Compact name grid for guest hosts (no photos) */
+.host-name-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 8px 16px;
+}
+.host-name-list li {
+  margin: 0;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
 /* --- Utility ------------------------------------------------------------ */
 .lede { font-size: 1.15rem; color: var(--text); }
 hr { border: 0; border-top: 1px solid var(--border); margin: 32px 0; }
