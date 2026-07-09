@@ -67,7 +67,7 @@ sessions, and welcoming new members into the community.
       <img class="team-photo team-photo-sm" src="{{ '/assets/img/team/tobias.jpg' | relative_url }}" alt="Tobias Theijll-Madsen" width="56" height="56">
     </div>
     <div class="team-info">
-      <h3 class="team-name">Tobias Theijll-Madsen</h3>
+      <h3 class="team-name"><a href="https://edwebprofiles.ed.ac.uk/profile/tobias-thejll-madsen" rel="noopener" target="_blank">Tobias Theijll-Madsen</a></h3>
     </div>
   </li>
   <li class="team-card team-card-compact">
@@ -75,7 +75,7 @@ sessions, and welcoming new members into the community.
       <img class="team-photo team-photo-sm" src="{{ '/assets/img/team/limor.jpg' | relative_url }}" alt="Limor Raviv" width="56" height="56">
     </div>
     <div class="team-info">
-      <h3 class="team-name">Limor Raviv</h3>
+      <h3 class="team-name"><a href="https://www.limorravivevolang.com/" rel="noopener" target="_blank">Limor Raviv</a></h3>
     </div>
   </li>
 </ul>
