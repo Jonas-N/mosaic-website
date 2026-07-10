@@ -53,7 +53,7 @@ title: Home
 
 ## How it works
 
-- **When:** monthly, usually early–mid afternoon UK time (90 minutes).
+- **When:** usually on the last Thursday of the month, early–mid afternoon UK time (90 minutes).
 - **Where:** on Zoom. Dates are on the [calendar]({{ '/calendar/' | relative_url }}); the joining link is emailed to the [mailing list]({{ '/about/#mailing-list' | relative_url }}) only (not on the public calendar).
 - **Who:** everyone is welcome — researchers, students, and the simply curious. Please share widely.
 
