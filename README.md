@@ -56,9 +56,9 @@ All external links live in `_config.yml` under clearly labelled keys
 (`google_calendar_*`, `social`, `mailing_list_*`). Edit them there — they are used
 across every page, so you only change them once.
 
-The **Zoom link is intentionally not stored in this repository.** It lives only in
-the Google Calendar events, keeping it off the public web. The site directs people
-to subscribe to the calendar or the mailing list to obtain it.
+The **Zoom link is intentionally not stored in this repository or on the public
+calendar.** It is emailed to the approved mailing list only. The calendar is for
+dates and titles; see the site copy and `CONTRIBUTING.md`.
 
 ## Local preview (optional)
 
