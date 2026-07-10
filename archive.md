@@ -5,10 +5,10 @@ permalink: /archive/
 noindex: true
 ---
 
-# Recording archive
+# Session archive
 
-Internal index of past MOSAIC sessions and recordings. This page is not linked
-from the main navigation.
+Internal index of past MOSAIC sessions — recordings and slides where available.
+This page is not linked from the main navigation.
 
 {% assign now = site.time | date: "%s" | plus: 0 %}
 {% assign past = "" | split: "" %}
@@ -52,6 +52,11 @@ from the main navigation.
         <span class="archive-rec-muted">No recording</span>
       {% else %}
         <span class="archive-rec-muted">No recording</span>
+      {% endif %}
+      {% if rec.slides %}
+        <a class="archive-slides-link" href="{{ rec.slides | relative_url }}"{% if rec.slides contains '.pdf' %} target="_blank" rel="noopener"{% endif %}>
+          {% if rec.slides_label %}{{ rec.slides_label }}{% else %}Slides{% endif %}
+        </a>
       {% endif %}
       {% if rec.note %}
         <span class="archive-rec-note">{{ rec.note }}</span>

@@ -546,17 +546,32 @@ video.team-photo {
   flex: 0 1 auto;
   text-align: right;
   font-size: 0.92rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
 }
 .archive-rec-link { font-weight: 600; }
+.archive-slides-link {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
 .archive-rec-muted { color: var(--muted); }
 .archive-rec-note {
   display: block;
   margin-top: 2px;
   font-size: 0.85rem;
   color: var(--muted);
+  text-align: right;
+  max-width: 22em;
 }
 @media (max-width: 480px) {
-  .archive-recording { text-align: left; width: 100%; }
+  .archive-recording {
+    text-align: left;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .archive-rec-note { text-align: left; }
 }
 
 /* --- Members world map (About) ------------------------------------------ */

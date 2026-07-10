@@ -2,6 +2,7 @@
 # Keys: event date as YYYY-MM-DD (matches event front-matter date).
 #
 # youtube: unlisted YouTube URL when archived
+# slides: path under site root (served from assets/slides/)
 # status:
 #   zoom_expired — had a Zoom cloud recording; link no longer works
 #   none         — no recording was made / none found
@@ -9,11 +10,14 @@
 
 "2021-11-24":
   status: none
+  slides: "/assets/slides/2021-11-24-flash-talk-jack.pptx"
+  slides_label: "Slides (Rachael Jack flash talk)"
 
 "2022-03-31":
   status: none
 "2022-04-28":
   status: zoom_expired
+  slides: "/assets/slides/2022-04-28-vr.pdf"
 "2022-05-26":
   status: zoom_expired
 "2022-06-30":
@@ -24,6 +28,7 @@
   status: zoom_expired
 "2022-11-24":
   status: zoom_expired
+  slides: "/assets/slides/2022-11-24-multimodal-dynamics.pptx"
 
 "2023-01-26":
   youtube: "https://youtu.be/19EbYVm4H5I"
@@ -33,6 +38,7 @@
   status: zoom_expired
 "2023-04-27":
   status: zoom_expired
+  slides: "/assets/slides/2023-04-27-high-quality-listening.pptx"
 "2023-05-25":
   status: zoom_expired
 "2023-06-29":
