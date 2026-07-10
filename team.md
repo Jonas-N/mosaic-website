@@ -27,7 +27,7 @@ sessions, and welcoming new members into the community.
     </div>
     <div class="team-info">
       <h3 class="team-name"><a href="https://linktr.ee/jonasnoelle" rel="noopener" target="_blank">Jonas Nölle</a></h3>
-      <p class="team-role">Postdoc, Centre for Language Evolution Studies, Nicolaus Copernicus University in Toruń</p>
+      <p class="team-role">Postdoc, Centre for Language Evolution Studies, Nicolaus Copernicus University in Toruń, Poland</p>
     </div>
   </li>
   <li class="team-card">
