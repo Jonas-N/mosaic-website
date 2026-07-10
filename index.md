@@ -5,11 +5,17 @@ title: Home
 
 <section class="hero">
   <h1>MOSAIC</h1>
-  <p class="tagline">The Multimodal Social Interactions Group — a monthly seminar series open to everyone.</p>
+  <p class="tagline">The Multimodal Social Interactions Group — an international research community, open to everyone.</p>
   <p class="lede">
-    Every month we host a <strong>Grand Challenge</strong>: an online session where
-    an international community of 200+ scholars digs into a pressing topic in
-    social interaction research. Talks, demos, tutorials, and open discussion — all on Zoom.
+    We study multimodal social interaction and communication with an interdisciplinary
+    lens, drawing on cognitive science, neuroscience, affective computing, AI,
+    psycholinguistics, and related fields.
+  </p>
+  <p class="lede">
+    Each month we meet online for a <strong>Grand Challenge</strong> — talks, demos,
+    tutorials, and open discussion on a pressing topic. Sessions usually fall on the
+    last Thursday of the month during the academic year (UK afternoon, 90 minutes).
+    Join via the calendar and mailing list; if you’d like to host a session, get in touch.
   </p>
   <div class="cta-row">
     <a class="btn btn-primary" href="{{ '/calendar/' | relative_url }}">Subscribe to the calendar</a>
