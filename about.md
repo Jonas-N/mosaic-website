@@ -25,9 +25,9 @@ curious. Please feel free to spread the word.
 
 ## Take part
 
-- **Attend:** [subscribe to the calendar]({{ '/calendar/' | relative_url }}) — the
-  Zoom link is inside each event, and you’ll get a reminder before we start.
-- **Stay in the loop:** [join our mailing list](#mailing-list) (email request; we approve).
+- **Attend:** [subscribe to the calendar]({{ '/calendar/' | relative_url }}) for
+  dates and reminders, and [join the mailing list](#mailing-list) for the Zoom
+  link (sent by email before each session; list join is approved by the organisers).
 - **Host a session:** we’re always looking for people to lead a Grand Challenge.
   Get in touch via the mailing list or
   [{{ site.mailing_list_signup_email }}](mailto:{{ site.mailing_list_signup_email }}?subject=Host%20a%20MOSAIC%20Grand%20Challenge).

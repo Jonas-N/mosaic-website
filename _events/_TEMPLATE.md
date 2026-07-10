@@ -13,7 +13,8 @@
 #  This file itself starts with an underscore, so Jekyll ignores it and it
 #  never shows up on the live site. Your copy must NOT start with an underscore.
 #
-#  Do NOT put the Zoom link here — it stays in the Google Calendar event only.
+#  Do NOT put the Zoom link here or in the public Google Calendar event.
+#  Zoom is emailed to the mailing list only (not published on the open web).
 # =============================================================================
 
 title: "Grand Challenge — <SESSION TITLE>"

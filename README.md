@@ -7,7 +7,7 @@ meets monthly for an online **Grand Challenge** seminar.
 The site lets members:
 
 - **Subscribe to the Google Calendar** (Google, Apple Calendar, Outlook) so they
-  always have the next session — and its Zoom link — to hand.
+  always have the next session to hand (Zoom links go by mailing list only).
 - **Browse event details** for upcoming and past Grand Challenges.
 
 Organizers add a new event by copying one Markdown file — see

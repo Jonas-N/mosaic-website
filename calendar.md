@@ -7,7 +7,11 @@ permalink: /calendar/
 # Calendar
 
 Add the MOSAIC calendar to your own calendar app once, and every Grand Challenge
-— including the Zoom joining link and a reminder — shows up automatically.
+date and time shows up automatically (with reminders if your app supports them).
+
+**Zoom joining links are not on the public calendar.** They are sent only by
+email to the [mailing list]({{ '/about/#mailing-list' | relative_url }}), which
+requires a short approval step — so the session stays limited to known members.
 
 {% include subscribe-buttons.html %}
 
@@ -18,7 +22,7 @@ Add the MOSAIC calendar to your own calendar app once, and every Grand Challenge
     <li><strong>Apple Calendar</strong> (iPhone, iPad, Mac): <em>Subscribe in Apple Calendar</em>. On iPhone, calendar links of this type always open Apple Calendar — that is normal.</li>
     <li><strong>Outlook on iPhone:</strong> the Outlook app does <em>not</em> reliably subscribe to external calendar feeds the way Apple Calendar does. Easiest options:
       <ol style="margin:6px 0 0">
-        <li><strong>Recommended on iPhone:</strong> use <em>Subscribe in Apple Calendar</em> — you still get every MOSAIC date, reminder, and the Zoom link in the system Calendar app.</li>
+        <li><strong>Recommended on iPhone:</strong> use <em>Subscribe in Apple Calendar</em> — you get every MOSAIC date and reminder in the system Calendar app. The Zoom link still comes by mailing-list email.</li>
         <li>Or open this page in <strong>Safari</strong>, tap <em>Subscribe in Outlook</em>, and complete the flow in <strong>Outlook on the web</strong> (signed into your work/personal Microsoft account). The feed then appears in the Outlook app if that account is already added there.</li>
       </ol>
     </li>

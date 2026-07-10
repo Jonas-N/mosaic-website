@@ -6,9 +6,10 @@ permalink: /events/
 
 # Events
 
-Our monthly Grand Challenge sessions. The Zoom link for each session is included
-in the calendar event — [subscribe to the calendar]({{ '/calendar/' | relative_url }})
-to join and get reminders.
+Our monthly Grand Challenge sessions. [Subscribe to the calendar]({{ '/calendar/' | relative_url }})
+for dates and reminders. The Zoom joining link is sent by email to the
+[mailing list]({{ '/about/#mailing-list' | relative_url }}) only (not on the public
+calendar).
 
 {% assign now = site.time | date: "%s" | plus: 0 %}
 {% assign by_date = site.events | sort: "date" %}

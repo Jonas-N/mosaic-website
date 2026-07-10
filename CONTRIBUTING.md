@@ -59,11 +59,13 @@ in doubt, `+01:00` for summer and `+00:00` for winter is correct.
 
 ## Important: the Zoom link
 
-**Do not put the Zoom link in the event file.** The joining link lives only in the
-Google Calendar event, so it stays off the public web. The website tells people to
-subscribe to the calendar (or the mailing list) to get it. To set the Zoom link,
-add it to the event in **Google Calendar** — the same static link is reused every
-month.
+**Do not put the Zoom link in the event file or in the public Google Calendar
+event.** The joining link is sent only by **mailing-list email** before each
+session (the list requires organiser approval). The calendar is for dates, times,
+and titles only.
+
+When you host: keep Zoom off the website markdown and off the public calendar
+description/location fields; share it via the mailing list announcement instead.
 
 ## Editing or removing an event
 

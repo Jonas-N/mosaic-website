@@ -58,17 +58,17 @@ layout: default
   <aside class="join-box">
     <h2>How to join</h2>
     {% if is_past %}
-    <p>This session has already taken place. Subscribe to the calendar so you don’t miss the next one.</p>
+    <p>This session has already taken place. Subscribe to the calendar and mailing list so you don’t miss the next one.</p>
     {% else %}
     <p>
-      The Zoom joining link is included in the calendar event. Add the MOSAIC
-      calendar to your own calendar and you’ll have the link ready at the click
-      of a button — plus a reminder before we start.
+      Session dates are on the public MOSAIC calendar. The <strong>Zoom joining link
+      is not published on the calendar or this website</strong> — it is sent by email
+      to the mailing list only (membership is approved by the organisers).
     </p>
     {% endif %}
     <p class="join-actions">
-      <a class="btn btn-primary" href="{{ '/calendar/' | relative_url }}">Subscribe to the calendar</a>
-      {% include mailing-list-join-link.html class="btn" %}
+      <a class="btn" href="{{ '/calendar/' | relative_url }}">Subscribe to the calendar</a>
+      {% include mailing-list-join-link.html class="btn btn-primary" label="Subscribe to mailing list" %}
     </p>
   </aside>
 </article>
