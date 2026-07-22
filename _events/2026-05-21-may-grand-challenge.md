@@ -80,14 +80,19 @@ the evolution of communication.
 
 ## Speakers
 
-**Sławomir Wacewicz** (Nicolaus Copernicus University, Toruń) is Associate
-Professor of Linguistics and co-founder of the Center for Language Evolution
+**Sławomir Wacewicz** (Nicolaus Copernicus University in Toruń) is an Associate
+Professor of Linguistics. He is co-founder of the Centre for Language Evolution
 Studies (CLES), where he currently serves as deputy head. He also directs the
 Toruń Interactionist Lab (TIL), which investigates the dynamics of human
-interaction. His work on the cost–benefit calculus of communication has shaped
-current thinking on the origins of language, including his notion of a “platform
-of trust” as a foundational condition for language to evolve at all.
+interaction. His work on the cost-benefit calculus of communication has
+contributed to current debates on language origins, especially through the notion
+of a “platform of trust” as a foundational condition for the evolution of cheap,
+open-ended human communication.
 
 **Séverine Hex** (University of Exeter; Junior Fellow, Harvard Society of Fellows)
-is a comparative ethologist studying how animals in complex societies use
-multimodal communication and social bonds to navigate their social worlds.
+is a comparative ethologist. She studies how animals in complex societies use
+multimodal communication and social bonds to navigate their social worlds. She
+will present her new *BBS* target article, “Multimodality as a safeguard of
+honesty in communication and language: from Animals to Humans”, which argues that
+combining signals across modalities is one of evolution’s key solutions to the
+honesty problem — from animal displays to human language.
