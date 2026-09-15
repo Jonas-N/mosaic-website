@@ -21,7 +21,8 @@ minute or two of you saving.
 4. Paste the template contents, then edit the fields (see below).
 5. Scroll down, add a short commit message like “Add June Grand Challenge”, and
    click **Commit new file**.
-6. Wait ~1–2 minutes, then check the live site. Your event appears under
+6. Wait ~1–2 minutes, then check the live site at
+   [mosaicseminar.uk](https://mosaicseminar.uk). Your event appears under
    **Upcoming** until its date passes, after which it moves to **Past events**
    automatically.
 

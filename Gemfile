@@ -6,7 +6,7 @@
 #   gem install bundler
 #   bundle install
 #   bundle exec jekyll serve
-# then open http://localhost:4000/mosaic-website/
+# then open http://localhost:4000/
 
 source "https://rubygems.org"
 

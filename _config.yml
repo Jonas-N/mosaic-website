@@ -14,11 +14,10 @@ description: >-
 institution: "University of Glasgow"
 
 # --- URL settings -------------------------------------------------------
-# For a project site served at https://<owner>.github.io/mosaic-website
-# set `baseurl` to "/mosaic-website" and `url` to "https://<owner>.github.io".
-# If you later move to a user/org site or a custom domain, set baseurl to "".
-baseurl: "/mosaic-website"
-url: ""
+# Custom domain (GitHub Pages). `baseurl` must be empty so the site is
+# served at the domain root, not at /mosaic-website.
+baseurl: ""
+url: "https://mosaicseminar.uk"
 
 # --- Google Calendar ----------------------------------------------------
 # The public MOSAIC calendar. These are the exact links from Google Calendar

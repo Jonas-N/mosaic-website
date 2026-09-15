@@ -13,6 +13,8 @@ The site lets members:
 Organizers add a new event by copying one Markdown file — see
 [`CONTRIBUTING.md`](CONTRIBUTING.md). No build tools or coding required.
 
+Live site: **[mosaicseminar.uk](https://mosaicseminar.uk)**.
+
 Built with [Jekyll](https://jekyllrb.com/) and hosted on **GitHub Pages**, which
 builds the site automatically on every push. Contributors don’t need Ruby or any
 local setup.
@@ -21,34 +23,39 @@ local setup.
 
 ## One-time setup (repository owner)
 
-1. **Create the repository** on GitHub. The recommended name is `mosaic-website`
-   (this matches the `baseurl` in `_config.yml`; see below to change it).
-2. **Push these files** to the `main` branch.
-3. **Enable GitHub Pages:** in the repo, go to **Settings → Pages**. Under
-   *Build and deployment*, set **Source: Deploy from a branch**, then choose
-   **Branch: `main`**, **Folder: `/ (root)`**, and click **Save**.
-4. Wait a minute, then visit the URL GitHub shows on that page — typically
-   `https://<your-username>.github.io/mosaic-website/`.
+The site is already published from this repository (`main` branch, `/` folder)
+to GitHub Pages, with the custom domain **mosaicseminar.uk**.
 
-### Matching `baseurl` to your repo name
+### Custom domain and DNS
 
-`_config.yml` contains:
+`_config.yml` is set for the domain root:
 
 ```yaml
-baseurl: "/mosaic-website"
+baseurl: ""
+url: "https://mosaicseminar.uk"
 ```
 
-- If your repository is named **`mosaic-website`**, leave this as-is.
-- If you use a **different repository name**, set `baseurl` to `"/<repo-name>"`.
-- If you host at the **root** (a repo named `<owner>.github.io`) or use a
-  **custom domain**, set `baseurl: ""`.
+The `CNAME` file at the repository root tells GitHub Pages the canonical host.
+DNS for `mosaicseminar.uk` is served by Cloudflare. Records (DNS only / grey
+cloud, not proxied) should be:
 
-### Custom domain (optional)
+| Type | Name | Content |
+|------|------|---------|
+| A | `@` | `185.199.108.153` |
+| A | `@` | `185.199.109.153` |
+| A | `@` | `185.199.110.153` |
+| A | `@` | `185.199.111.153` |
+| AAAA | `@` | `2606:50c0:8000::153` |
+| AAAA | `@` | `2606:50c0:8001::153` |
+| AAAA | `@` | `2606:50c0:8002::153` |
+| AAAA | `@` | `2606:50c0:8003::153` |
+| CNAME | `www` | `jonas-n.github.io` |
 
-To use your own domain, add a file named `CNAME` at the repository root containing
-just the domain (e.g. `mosaic.example.org`), configure DNS with your provider,
-and set `baseurl: ""` in `_config.yml`. See
-[GitHub’s custom domain guide](https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site).
+Leave the Cloudflare proxy **off** (grey cloud) so GitHub can issue the HTTPS
+certificate. After DNS is correct, turn on **Enforce HTTPS** in
+**Settings → Pages**.
+
+See [GitHub’s custom domain guide](https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site).
 
 ## Updating the calendar or social links
 
@@ -70,19 +77,20 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Then open <http://localhost:4000/mosaic-website/>.
+Then open <http://localhost:4000/>.
 
 No Ruby? You can also preview with Docker:
 
 ```sh
 docker run --rm -it -v "$PWD:/srv/jekyll" -p 4000:4000 jekyll/jekyll:4 \
-  jekyll serve --baseurl /mosaic-website
+  jekyll serve
 ```
 
 ## Repository layout
 
 ```
-_config.yml            Site-wide settings (calendar links, social, baseurl)
+_config.yml            Site-wide settings (calendar links, social, url)
+CNAME                  Custom domain for GitHub Pages (mosaicseminar.uk)
 index.md               Home page (intro + next event)
 events.md              Upcoming + past event listing
 calendar.md            Calendar embed + subscribe buttons
