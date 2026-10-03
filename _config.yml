@@ -55,6 +55,9 @@ defaults:
 
 # --- Build settings -----------------------------------------------------
 timezone: Europe/London
+# Publish dated collection pages (events) before the session date.
+# GitHub Pages defaults to future: false, which 404s upcoming event URLs.
+future: true
 markdown: kramdown
 # Files whose names start with an underscore (e.g. _events/_TEMPLATE.md) are
 # ignored by Jekyll, so the template never appears on the live site.
