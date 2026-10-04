@@ -17,8 +17,8 @@ sessions, and welcoming new members into the community.
       <img class="team-photo" src="{{ '/assets/img/team/rachael.jpg' | relative_url }}" alt="Rachael Jack" width="120" height="120">
     </div>
     <div class="team-info">
-      <h3 class="team-name"><a href="https://www.gla.ac.uk/schools/psychologyneuroscience/staff/rachaeljack/" rel="noopener" target="_blank">Rachael Jack</a></h3>
-      <p class="team-role">Professor, Area Lead of Computational Social Sciences at Vanderbilt University, USA</p>
+      <h3 class="team-name"><a href="https://computing.vanderbilt.edu/person/rachael-jack/" rel="noopener" target="_blank">Rachael Jack</a></h3>
+      <p class="team-role">Professor, Area Lead of Computational Mind &amp; Behavior at Vanderbilt University, USA</p>
     </div>
   </li>
   <li class="team-card">
