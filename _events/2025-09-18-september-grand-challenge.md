@@ -11,7 +11,7 @@ hosts:
   - name: "Chen Zhou"
     affiliation: "University of Glasgow"
 speakers:
-  - name: "Dr Yaomin Jiang"
+  - name: "Yaomin Jiang"
     affiliation: "Center for Humans and Machines, MPI for Human Development"
     talk: "Humans learn to prefer trustworthy AI over human partners"
   - name: "Alice Xia"

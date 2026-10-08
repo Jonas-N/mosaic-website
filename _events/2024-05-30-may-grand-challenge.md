@@ -10,7 +10,7 @@ summary: >-
 hosts:
   - name: "Jonas Nölle"
 speakers:
-  - name: "Dr Marlou Rasenberg"
+  - name: "Marlou Rasenberg"
     affiliation: "Meertens Institute, Amsterdam"
 ---
 

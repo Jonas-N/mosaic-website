@@ -10,7 +10,7 @@ summary: >-
 hosts:
   - name: "Jonas Nölle"
 speakers:
-  - name: "Professor Guy Itzchakov"
+  - name: "Guy Itzchakov"
     affiliation: "University of Haifa"
     talk: "High-quality Listening: What it is, and how can we use technology to advance it?"
 agenda:

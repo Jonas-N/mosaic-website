@@ -10,13 +10,13 @@ summary: >-
 hosts:
   - name: "Jonas Nölle"
 speakers:
-  - name: "Dr Anita Slonimska"
+  - name: "Anita Slonimska"
     affiliation: "MPI for Psycholinguistics"
     talk: "Communicative efficiency in spoken vs. signed languages"
-  - name: "Professor Gabriella Vigliocco"
+  - name: "Gabriella Vigliocco"
     affiliation: "University College London"
     talk: "Communicative efficiency in multimodal language directed to adults and children"
-  - name: "Dr Natalia Levshina"
+  - name: "Natalia Levshina"
     affiliation: "Radboud University, Nijmegen (discussant)"
 agenda:
   - "14:00–14:05  Welcome (MOSAIC team)"

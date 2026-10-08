@@ -18,7 +18,7 @@ speakers:
   - name: "Alex Titus"
     affiliation: "Radboud University & MPI Nijmegen"
     talk: "How Enhancing Linguistic and Non-linguistic Context Influences Bilingual Communication With the Use of VR"
-  - name: "Dr Chen Zhou"
+  - name: "Chen Zhou"
     affiliation: "University of Glasgow"
     talk: "Modelling human social perception and action by quantifying human behaviours in VR"
 agenda:

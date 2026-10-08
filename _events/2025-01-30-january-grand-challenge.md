@@ -10,10 +10,10 @@ summary: >-
 hosts:
   - name: "Pablo Arias-Sarah"
 speakers:
-  - name: "Professor Antonia Hamilton"
+  - name: "Antonia Hamilton"
     affiliation: "Institute of Cognitive Neuroscience, University College London"
     talk: "Neural Mechanisms Underlying Hyperscanning"
-  - name: "Professor Guillaume Dumas"
+  - name: "Guillaume Dumas"
     affiliation: "Université de Montréal & CHU Sainte-Justine"
     talk: "Hyperscanning: Theory, Methods, and Applications"
 agenda:

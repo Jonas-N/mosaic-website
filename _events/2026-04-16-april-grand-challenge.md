@@ -14,10 +14,10 @@ hosts:
   - name: "Pablo Arias-Sarah"
     affiliation: "University of Glasgow"
 speakers:
-  - name: "Dr Bita Azari"
+  - name: "Bita Azari"
     affiliation: "Simon Fraser University"
     talk: "Chehre: A Multimodal Dataset of Facial Expressions Based on Emojis"
-  - name: "Dr Hamilton Morrin"
+  - name: "Hamilton Morrin"
     affiliation: "South London and Maudsley NHS Foundation Trust / King’s College London"
     talk: "Delusions by design? How everyday AIs might be fuelling delusions"
 agenda:

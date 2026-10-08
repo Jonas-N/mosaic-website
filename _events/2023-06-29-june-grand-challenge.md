@@ -10,7 +10,7 @@ summary: >-
 hosts:
   - name: "Jonas Nölle"
 speakers:
-  - name: "Dr Judith Holler"
+  - name: "Judith Holler"
     affiliation: "MPI for Psycholinguistics & Donders Institute, Radboud University"
     talk: "Visual signals as core components of face-to-face conversation"
 agenda:

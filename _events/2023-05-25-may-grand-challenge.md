@@ -15,10 +15,10 @@ speakers:
   - name: "Jonas Nölle"
     affiliation: "University of Glasgow"
     talk: "What's in a face? Semiotic capacities of facial expressions"
-  - name: "Dr Nicolas Fay"
+  - name: "Nicolas Fay"
     affiliation: "University of Western Australia, Perth"
     talk: "Evidence that gesture is the primary modality for language creation"
-  - name: "Dr Marcus Perlman"
+  - name: "Marcus Perlman"
     affiliation: "University of Birmingham"
     talk: "Vocalizations afford plenty of iconicity"
 agenda:

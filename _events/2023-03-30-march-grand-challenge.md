@@ -11,7 +11,7 @@ summary: >-
 hosts:
   - name: "Jonas Nölle"
 speakers:
-  - name: "Professor Aslı Özyürek"
+  - name: "Aslı Özyürek"
     affiliation: "Multimodal Language Department, MPI for Psycholinguistics, Nijmegen"
     talk: "Multimodality as a design feature of human language"
 agenda:

@@ -10,11 +10,11 @@ summary: >-
 hosts:
   - name: "Rachael Jack"
 speakers:
-  - name: "Dr Roy Hessels"
+  - name: "Roy Hessels"
     affiliation: "Utrecht University"
-  - name: "Professor Alan Kingstone"
+  - name: "Alan Kingstone"
     affiliation: "University of British Columbia"
-  - name: "Professor Daniel Richardson"
+  - name: "Daniel Richardson"
     affiliation: "University College London"
 agenda:
   - "Introductions (5 min)"

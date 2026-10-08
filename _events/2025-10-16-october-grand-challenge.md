@@ -11,10 +11,10 @@ hosts:
   - name: "Hélio Cuve"
   - name: "Jay Davies"
 speakers:
-  - name: "Dr Charles Nduka"
+  - name: "Charles Nduka"
     affiliation: "Emteq Labs"
     talk: "Emteq Showcase"
-  - name: "Professor Hristijan Gjoreski"
+  - name: "Hristijan Gjoreski"
     affiliation: "Emteq Labs / Ss. Cyril and Methodius University of Skopje"
     talk: "Emteq Showcase"
 agenda:
