@@ -8,10 +8,10 @@ summary: >-
   signals as an integrated system: describing repertoire structure, meaning,
   and function, and quantifying communicative complexity across taxa.
 hosts:
-  - name: "Séverine Hex"
+  - name: "Severine Hex"
     affiliation: "Harvard University; Junior Fellow, Harvard Society of Fellows"
 speakers:
-  - name: "Séverine Hex"
+  - name: "Severine Hex"
     affiliation: "Harvard University; Junior Fellow, Harvard Society of Fellows"
     talk: "A network-based framework for multimodal repertoires: structure, meaning, and function"
   - name: "Louise Peckre"
@@ -19,8 +19,8 @@ speakers:
     talk: "Characterising communicative complexity across taxa with cross-modal repertoire networks"
 agenda:
   - "14:00–14:05  MOSAIC opening"
-  - "14:05–14:15  Introduction (Séverine Hex)"
-  - "14:15–14:35  A network-based framework for multimodal repertoires (Séverine Hex)"
+  - "14:05–14:15  Introduction (Severine Hex)"
+  - "14:15–14:35  A network-based framework for multimodal repertoires (Severine Hex)"
   - "14:35–14:40  Q&A"
   - "14:40–15:00  Characterising communicative complexity across taxa (Louise Peckre)"
   - "15:00–15:05  Q&A"
@@ -38,11 +38,11 @@ This Grand Challenge presents two frameworks that use **network theory**, a
 powerful methodology for intuitively visualising and investigating the
 relationships between entities, as a tool for analysing multimodal repertoires.
 
-Hosted by **Séverine Hex**.
+Hosted by **Severine Hex**.
 
-## Talk 1 — A network-based framework for multimodal repertoires: structure, meaning, and function (Séverine Hex)
+## Talk 1 — A network-based framework for multimodal repertoires: structure, meaning, and function (Severine Hex)
 
-Séverine Hex presents a framework that leverages network-based methods to
+Severine Hex presents a framework that leverages network-based methods to
 (1) describe the relationships between simultaneously produced signals within
 and between modalities and (2) infer signal meaning and function. She embeds
 these tools in a theoretical framework that can be used to interpret and
@@ -60,7 +60,7 @@ evolutionary trade-offs underlying the evolution of communicative complexity.
 
 ## Speakers
 
-**Séverine Hex** (Harvard University; Junior Fellow, Harvard Society of Fellows)
+**Severine Hex** (Harvard University; Junior Fellow, Harvard Society of Fellows)
 is a comparative ethologist and behavioural ecologist who studies how animals
 living in complex societies navigate the challenges of their social worlds using
 multimodal communication, social cognition, and social bonds.

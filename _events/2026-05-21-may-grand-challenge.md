@@ -16,14 +16,14 @@ speakers:
   - name: "Sławomir Wacewicz"
     affiliation: "Nicolaus Copernicus University, Toruń"
     talk: "The Platform of Trust as a Deep Design Principle for Language Origins"
-  - name: "Séverine Hex"
+  - name: "Severine Hex"
     affiliation: "University of Exeter; Junior Fellow, Harvard Society of Fellows"
     talk: "Multimodality as a safeguard of honesty in communication and language: from Animals to Humans"
 agenda:
   - "14:00–14:05  Welcome & Introduction (MOSAIC Team, Jonas Nölle)"
   - "14:05–14:20  The Platform of Trust as a Deep Design Principle for Language Origins (Sławomir Wacewicz)"
   - "14:20–14:25  Q&A"
-  - "14:25–14:35  Multimodality as a safeguard of honesty in communication and language: from Animals to Humans (Séverine Hex)"
+  - "14:25–14:35  Multimodality as a safeguard of honesty in communication and language: from Animals to Humans (Severine Hex)"
   - "14:35–14:40  Q&A"
   - "14:45–15:30  Open discussion"
 ---
@@ -64,7 +64,7 @@ evolutionary trajectories — “expensive hype” pantomime, as found in ritual
 performance, and “efficient whispers” pantomime, which naturally simplifies into
 communicatively effective manual gestures and signs.
 
-## Talk 2 — Multimodality as a safeguard of honesty in communication and language: from Animals to Humans (Séverine Hex)
+## Talk 2 — Multimodality as a safeguard of honesty in communication and language: from Animals to Humans (Severine Hex)
 
 Multimodality characterizes nearly every communicative system, and in our recent
 paper accepted in *Behavioral and Brain Sciences* we argue that this feature of
@@ -89,7 +89,7 @@ contributed to current debates on language origins, especially through the notio
 of a “platform of trust” as a foundational condition for the evolution of cheap,
 open-ended human communication.
 
-**Séverine Hex** (University of Exeter; Junior Fellow, Harvard Society of Fellows)
+**Severine Hex** (University of Exeter; Junior Fellow, Harvard Society of Fellows)
 is a comparative ethologist. She studies how animals in complex societies use
 multimodal communication and social bonds to navigate their social worlds. She
 will present her new *BBS* target article, “Multimodality as a safeguard of
